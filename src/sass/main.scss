@@ -1,3 +1,15 @@
 @import './utils/variables.scss';
+@import './utils/mixins';
 
-@import './components/example';
+@import './components/global';
+@import './components/logo';
+@import './components/btn';
+@import './components/hero-header';
+@import './components/mobile-menu';
+@import './components/products';
+@import './components/about';
+@import './components/advantages';
+@import './components/gallery';
+@import './components/customer-reviews';
+@import './components/contacts';
+@import './components/footer';
