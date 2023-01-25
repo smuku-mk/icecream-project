@@ -1,0 +1,28 @@
+.container 
+{
+max-width: 600px;
+
+  
+}
+  
+
+
+
+
+  .btn {
+    margin-left: 30px;
+  }
+
+  .about__title
+  {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(169, 38, 29);
+    @media  (min-width: 800px) {
+        body {
+          background-color: lightblue;
+          flex-direction: row;
+        }
+    }
+  }
