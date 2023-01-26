@@ -1,0 +1,26 @@
+.contacts{
+    background-color: $pageBg;
+    
+&__box{
+margin:0 50px;}
+    
+
+
+&__container{
+    background-color:$white;
+    box-shadow:0px 8px 30px $contactsBoxShadow;
+    border-radius:24px;
+}
+
+&__title{
+    color:$white;
+    border-radius:6px;
+    
+}
+&--coffee{
+    background-color: $CoffeeBG;
+}
+&--foodtruck{
+    background-color: $lime;
+}
+}
