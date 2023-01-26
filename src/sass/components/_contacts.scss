@@ -1,5 +1,11 @@
 .contacts{
     background-color: $pageBg;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    
+
 
 &__head{
     display:none;
@@ -11,11 +17,12 @@
     gap:20px;
     justify-content: center;
     max-width:220px;
-    margin:0 50px;
+ 
 
     @media(min-width:768px){
         flex-direction: row;
         margin: 119px 34px 81px;
+    
     }
 
 }
@@ -100,8 +107,6 @@ color:$text;
     flex-direction: column;
     justify-content: center;
     margin-top:54px;
-    margin-left:79px;
-    margin-right:79px;
     padding-bottom:113px;
     gap:10px;
 
