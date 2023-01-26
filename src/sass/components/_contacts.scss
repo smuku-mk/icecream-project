@@ -1,11 +1,16 @@
 .contacts{
     background-color: $pageBg;
+
+&__head{
+    display:none;
+}
     
 &__box{ 
     display:flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap:20px;
     justify-content: center;
+    max-width:220px;
     margin:0 50px;
     }
     
@@ -24,24 +29,66 @@
 }
 
 &__title{
-    color:$white;
-    border-radius:6px;
-    font-family: 'DM Sans';
-font-style: normal;
+color:$white;
+border-radius:6px;
 font-weight: 500;
 font-size: 12px;
-line-height: 186%;
+line-height: 1,83;
 text-align: center;
 margin-bottom:25px;
 
     
 }
 &--cafe{
-    background-color: $CoffeeBG;
-    width:80px;
+background-color: $CoffeeBG;
+width:80px;
 }
 &--foodtruck{
-    background-color: $lime;
-    width:130px;
+background-color: $lime;
+width:130px;
 }
+
+&__city{
+font-weight: 500;
+font-size: 12px;
+line-height: 1.83;
+letter-spacing: 0.04em;
+margin-bottom:10px;
+}
+&__description{
+font-weight: 500;
+font-size: 12px;
+line-height: 1.5;
+color:$text;
+padding-bottom:25px;
+border-bottom: 1px solid $gray;
+}
+
+&__weekdays{
+font-weight: 500;
+font-size: 12px;
+line-height:1,83;
+padding-top:25px;
+margin-bottom:5px;
+}
+
+&__hours{
+font-weight: 500;
+font-size: 12px;
+line-height: 1,83;
+color:$brand-pink;
+padding-bottom:25px;
+border-bottom: 1px solid $gray;
+margin-bottom:25px;
+}
+&__info{
+font-weight: 500;
+font-size: 12px;
+line-height: 1,5;
+color:$text;
+
+
+}
+
+
 }

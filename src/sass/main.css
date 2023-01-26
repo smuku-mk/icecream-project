@@ -45,11 +45,15 @@ img {
 .contacts {
   background-color: #fff5f6;
 }
+.contacts__head {
+  display: none;
+}
 .contacts__box {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 20px;
   justify-content: center;
+  max-width: 220px;
   margin: 0 50px;
 }
 .contacts__container {
@@ -63,11 +67,9 @@ img {
 .contacts__title {
   color: #ffffff;
   border-radius: 6px;
-  font-family: "DM Sans";
-  font-style: normal;
   font-weight: 500;
   font-size: 12px;
-  line-height: 186%;
+  line-height: 1, 83;
   text-align: center;
   margin-bottom: 25px;
 }
@@ -78,4 +80,41 @@ img {
 .contacts--foodtruck {
   background-color: #c2e297;
   width: 130px;
+}
+.contacts__city {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  letter-spacing: 0.04em;
+  margin-bottom: 10px;
+}
+.contacts__description {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #907e82;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e1e1e1;
+}
+.contacts__weekdays {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1, 83;
+  padding-top: 25px;
+  margin-bottom: 5px;
+}
+.contacts__hours {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1, 83;
+  color: #ffa5ba;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 25px;
+}
+.contacts__info {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1, 5;
+  color: #907e82;
 }/*# sourceMappingURL=main.css.map */
