@@ -1,8 +1,13 @@
 .contacts{
     background-color: $pageBg;
     
-&__box{
-margin:0 50px;}
+&__box{ 
+    display:flex;
+    flex-wrap: wrap;
+    gap:20px;
+    justify-content: center;
+    margin:0 50px;
+    }
     
 
 
@@ -10,17 +15,33 @@ margin:0 50px;}
     background-color:$white;
     box-shadow:0px 8px 30px $contactsBoxShadow;
     border-radius:24px;
+    
+}
+
+&__content{
+
+    margin:43px 20px;
 }
 
 &__title{
     color:$white;
     border-radius:6px;
+    font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 186%;
+text-align: center;
+margin-bottom:25px;
+
     
 }
-&--coffee{
+&--cafe{
     background-color: $CoffeeBG;
+    width:80px;
 }
 &--foodtruck{
     background-color: $lime;
+    width:130px;
 }
 }

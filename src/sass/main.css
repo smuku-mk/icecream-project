@@ -46,6 +46,10 @@ img {
   background-color: #fff5f6;
 }
 .contacts__box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
   margin: 0 50px;
 }
 .contacts__container {
@@ -53,13 +57,25 @@ img {
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
 }
+.contacts__content {
+  margin: 43px 20px;
+}
 .contacts__title {
   color: #ffffff;
   border-radius: 6px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  text-align: center;
+  margin-bottom: 25px;
 }
-.contacts--coffee {
+.contacts--cafe {
   background-color: #f0d1a5;
+  width: 80px;
 }
 .contacts--foodtruck {
   background-color: #c2e297;
+  width: 130px;
 }/*# sourceMappingURL=main.css.map */
