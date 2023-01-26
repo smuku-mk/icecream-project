@@ -18,11 +18,11 @@ max-width: 600px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: rgb(169, 38, 29);
-    @media  (min-width: 800px) {
-        body {
+    background-color: #FFF5F6;
+    @media  (min-width: 800px) 
+      {
           background-color: lightblue;
           flex-direction: row;
         }
     }
-  }
+  
