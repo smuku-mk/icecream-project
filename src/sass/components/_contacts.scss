@@ -12,7 +12,13 @@
     justify-content: center;
     max-width:220px;
     margin:0 50px;
+
+    @media(min-width:768px){
+        flex-direction: row;
+        margin: 119px 34px 81px;
     }
+
+}
     
 
 
