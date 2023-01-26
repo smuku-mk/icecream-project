@@ -15,13 +15,16 @@
     display:flex;
     flex-direction: column;
     gap:20px;
-    justify-content: center;
     max-width:220px;
+    width:100%;
+    justify-content: center;
+   
  
 
     @media(min-width:768px){
         flex-direction: row;
-        margin: 119px 34px 81px;
+        margin-top:119px;
+        margin-bottom:81px;
     
     }
 
