@@ -89,6 +89,17 @@ color:$text;
 
 
 }
+&__buttons{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top:54px;
+    margin-left:79px;
+    margin-right:79px;
+    padding-bottom:113px;
+    gap:10px;
 
+
+}
 
 }
