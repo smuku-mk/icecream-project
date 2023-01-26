@@ -2,8 +2,12 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: $pageBg;
+  // background-color: $pageBg;
   @media (min-width: 768px) {
     flex-direction: row;
   }
+}
+
+.about--bgcolor {
+  background-color: $pageBg;
 }
