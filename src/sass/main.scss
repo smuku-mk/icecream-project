@@ -1,6 +1,6 @@
 @import './utils/variables.scss';
 @import './utils/mixins';
-
+@import './modules/swiper.scss';
 @import './components/global';
 @import './components/logo';
 @import './components/btn';
@@ -13,3 +13,4 @@
 @import './components/customer-reviews';
 @import './components/contacts';
 @import './components/footer';
+
