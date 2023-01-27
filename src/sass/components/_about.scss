@@ -1,25 +1,29 @@
 .about {
-  font-family: Titan One;
-  font-style: Regular;
-  font-size: 34px;
-  line-height: 39px;
-  line-height: 100%;
-  text-align: Center;
-  vertical-align: Top;
-  color: $brand-red;
-  padding-bottom: 26px;
-  @media (min-width: 768px) {
-    font-size: 48px;
-  }
-  @media (min-width: 1200px) {
-    font-size: 58px;
+  background-color: $pageBg;
+
+  &__tittle-2th {
+    font-family: Titan One;
+    font-style: Regular;
+    font-size: 34;
+    line-height: 39px;
+    line-height: 100%;
+    text-align: Center;
+    vertical-align: Top;
+    color: $brand-red;
+    padding-bottom: 26px;
+    @media (min-width: 768px) {
+      font-size: 48;
+    }
+    @media (min-width: 1200px) {
+      font-size: 58;
+    }
   }
 
   &__title {
     display: block;
     font-family: Titan One;
     font-style: Regular;
-    font-size: 18px;
+    font-size: 18;
     line-height: 21px;
     text-align: center;
     // vertical-align: center;
@@ -55,9 +59,9 @@
       flex-direction: row;
       justify-content: center;
     }
-    @media (min-width: 1200px) {
-      justify-content: center;
-    }
+    //@media (min-width: 1200px) {
+    //justify-content: center;
+    //}
   }
 
   &__text-wrapper {
@@ -68,19 +72,19 @@
 
   &__text {
     font-family: DM Sans;
-    font-size: 12px;
+    font-size: 12;
     line-height: 19px;
     text-align: Left;
     vertical-align: Top;
-    color: $body;
+    // color: $body;
     padding-bottom: 30px;
     z-index: 2;
   }
 
   &__description {
-    font-family: DM Sans;
+    // font-family: DM Sans;
     font-style: Medium;
-    font-size: 12px;
+    font-size: 12;
     line-height: 19px;
     text-align: left;
     vertical-align: Top;
@@ -93,17 +97,4 @@
       margin-bottom: 45px;
     }
   }
-
-  &--bgcolor {
-    background-color: $pageBg;
-    // background-color: rgb(31, 6, 134);
-  }
 }
-
-// .btn__about--margin {
-//   margin-top: 17px;
-//   margin-bottom: 39px;
-//   @media (min-width: 768px) {
-//     margin-top: 62px;
-//   }
-//}
