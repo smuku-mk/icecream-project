@@ -13,15 +13,11 @@
   }
 
   &__tittle-2th {
-    font-family: Titan One;
-    font-style: Regular;
-    font-size: 34;
-    line-height: 39px;
-    line-height: 100%;
+    @include font-mixin(Titan One, null, 34, 39px, null, $brand-red);
     text-align: Center;
     vertical-align: Top;
-    color: $brand-red;
     padding-bottom: 26px;
+
     @media (min-width: 768px) {
       font-size: 48;
     }
@@ -31,15 +27,11 @@
   }
 
   &__title {
+    @include font-mixin(Titan One, null, 18, 21px, null, $brand-pink);
     display: block;
-    font-family: Titan One;
-    font-style: Regular;
-    font-size: 18;
-    line-height: 21px;
     text-align: center;
     padding-top: 125px;
     padding-bottom: 15px;
-    color: $brand-pink;
   }
 
   &__img {
@@ -78,12 +70,9 @@
   }
 
   &__text {
-    font-family: DM Sans;
-    font-size: 12;
-    line-height: 19px;
+    @include font-mixin(DM Sans, null, 12, 19px, null, null);
     text-align: Left;
     vertical-align: Top;
-
     padding-bottom: 30px;
     z-index: 2;
   }
