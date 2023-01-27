@@ -1,13 +1,81 @@
-.about__wrapper {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  // background-color: $pageBg;
-  @media (min-width: 768px) {
-    flex-direction: row;
+.about {
+  font-family: Titan One;
+  font-style: Regular;
+  font-size: 34px;
+  line-height: 39px;
+  line-height: 100%;
+  text-align: Center;
+  vertical-align: Top;
+  color: $brand-red;
+  padding-bottom: 26px;
+
+  &__title {
+    display: block;
+    font-family: Titan One;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    vertical-align: Top;
+    padding-top: 125px;
+    padding-bottom: 15px;
+  }
+
+  &__img {
+    padding-bottom: 46px;
+  }
+
+  &__wrapper {
+    display: flex;
+
+    align-items: center;
+    flex-direction: column;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+
+    &__text-wrapper {
+    }
+
+    &__text {
+      font-family: DM Sans;
+      font-size: 12px;
+      line-height: 19px;
+      text-align: Left;
+      vertical-align: Top;
+      color: $body;
+      padding-bottom: 30px;
+      z-index: 2;
+    }
+
+    &__description {
+      font-family: DM Sans;
+      font-style: Medium;
+      font-size: 12px;
+      line-height: 19px;
+      text-align: left;
+      vertical-align: Top;
+      color: $text;
+    }
+
+    &--bgcolor {
+      background-color: $pageBg;
+    }
   }
 }
 
-.about--bgcolor {
-  background-color: $pageBg;
+.btn__about--margin {
+  margin-top: 17px;
+  margin-bottom: 39px;
+}
+
+.bg {
+  // background-color: aqua;
+  background-image: url(../images/sectionbg1_2x.png); /* image */
+  background-position: center; /* center the image */
+  background-size: cover;
+
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
