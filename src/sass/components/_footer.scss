@@ -37,6 +37,10 @@
     fill: $white;
     display: flex;
     width: 100%;
+
+    &:hover {
+      background-color: $brand-red;
+    }
   }
   &__link {
     justify-content: flex-end;

@@ -86,6 +86,9 @@ img {
   display: flex;
   width: 100%;
 }
+.footer__circle:hover {
+  background-color: #d41443;
+}
 .footer__link {
   justify-content: flex-end;
   align-items: flex-end;
