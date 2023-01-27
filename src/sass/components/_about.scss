@@ -7,6 +7,9 @@
   @media (min-width: 768px) {
     background-image: none;
   }
+  @media (min-width: 1200px) {
+    background-image: url('../images/sectionbg1_2x.png');
+  }
 
   &__tittle-2th {
     font-family: Titan One;
