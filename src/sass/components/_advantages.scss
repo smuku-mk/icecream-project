@@ -1,9 +1,6 @@
 .advantages {
-  min-width: 320px;
   background-color: $pageBg;
-  &__list {
-    padding: 39px 20px 59px 20px;
-  }
+  padding: 39px 0 59px 0;
   &__header-hidden {
     display: none;
   }
@@ -11,15 +8,9 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
-    padding: 0 0 38px 0;
-    font-family: 'Titan One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 1.14;
-    letter-spacing: 0.04em;
+    margin-bottom: 38px;
+    @include font-mixin('Titan One', 400, 36px, 1.14, 0.04em, $brand-red);
     text-transform: uppercase;
-    color: $brand-red;
     &--1::before {
       @extend %advantages-icon;
       background-image: url(../images/icon-1-33.png);
@@ -34,14 +25,8 @@
     }
   }
   &__list-text {
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 170%;
-    letter-spacing: normal;
+    @include font-mixin('DM Sans', 700, 12px, 1.67, normal, $body);
     text-transform: none;
-    color: $body;
     max-width: 230px;
   }
 }
@@ -57,19 +42,19 @@
   .advantages {
     min-width: 768px;
     flex-direction: row;
+    padding: 66px 0 140px 0;
     &__list {
-      padding: 66px 36px 140px 36px;
       display: flex;
     }
     &__list-header {
       font-size: 48px;
       text-transform: none;
-      width: 180px;
+      max-width: 180px;
       margin-right: 60px;
     }
     &__list-text {
       font-size: 14px;
-      line-height: 176%;
+      line-height: 1.71;
     }
   }
 }
@@ -77,19 +62,18 @@
 @media screen and (min-width: 1280px) {
   .advantages {
     min-width: 1280px;
-    &__list {
-      padding: 39px 115px 140px 115px;
-    }
+    padding: 39px 0 140px 0;
     &__list-header {
       font-size: 58px;
-      width: 330px;
+      max-width: none;
+      min-width: 330px;
       margin-right: 30px;
     }
     &__list-text {
       font-size: 16px;
-      line-height: 178%;
+      line-height: 1.75;
       letter-spacing: 0.02em;
-      max-width: 330px;
+      max-width: inherit;
     }
   }
 }
