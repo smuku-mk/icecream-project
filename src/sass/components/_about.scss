@@ -4,6 +4,9 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center bottom;
+  @media (min-width: 768px) {
+    background-image: none;
+  }
 
   &__tittle-2th {
     font-family: Titan One;
