@@ -1,0 +1,73 @@
+.footer {
+  background-color: $pageBg;
+  display: block;
+  flex-direction: column;
+  min-width: 320px;
+
+  &__header {
+    color: $brand-pink;
+    font-family: 'Titan One';
+    font-size: 18px;
+    font-weight: 400;
+    display: block;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 20px;
+    padding-left: 20px;
+    max-width: 80%;
+    &--color {
+      color: $brand-red;
+      font-size: 34px;
+      margin-top: 16px;
+      display: block;
+    }
+  }
+  &__list {
+    display: flex;
+    list-style: none;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-right: 20px;
+  }
+  &__circle {
+    padding: 3px;
+    background-color: $brand-pink;
+    border-radius: 50%;
+    fill: $white;
+    display: flex;
+    width: 100%;
+  }
+  &__link {
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-left: 28px;
+    margin-top: 43px;
+  }
+  &__contacts {
+    margin: 46px 0px 43px 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    line-height: 22px;
+    color: $body;
+    font-size: 12px;
+    font-weight: 700;
+    padding-right: 20px;
+    &--color {
+      color: $brand-red;
+    }
+  }
+  &__rights {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: Center;
+    color: $text;
+    width: 100%;
+    border-top: 1px solid $text;
+    font-family: inherit;
+    font-weight: 700;
+    padding: 23px 91px 25px 79px;
+  }
+}
