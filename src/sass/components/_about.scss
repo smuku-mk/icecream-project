@@ -1,5 +1,9 @@
 .about {
   background-color: $pageBg;
+  background-image: url('../images/sectionbg1_2x.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom;
 
   &__tittle-2th {
     font-family: Titan One;
