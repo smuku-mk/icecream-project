@@ -22,7 +22,7 @@
     font-size: 18px;
     line-height: 21px;
     text-align: center;
-    vertical-align: Top;
+    // vertical-align: center;
     padding-top: 125px;
     padding-bottom: 15px;
   }
@@ -92,10 +92,10 @@
   }
 }
 
-.btn__about--margin {
-  margin-top: 17px;
-  margin-bottom: 39px;
-  @media (min-width: 768px) {
-    margin-top: 62px;
-  }
-}
+// .btn__about--margin {
+//   margin-top: 17px;
+//   margin-bottom: 39px;
+//   @media (min-width: 768px) {
+//     margin-top: 62px;
+//   }
+//}
