@@ -4,6 +4,8 @@
     flex-direction: column;
     justify-content: center;
     align-items:center;
+    padding:86px 50px 113px;
+    
     
 
 
@@ -15,19 +17,10 @@
     display:flex;
     flex-direction: column;
     gap:20px;
-    max-width:220px;
+    max-width:480px;
     width:100%;
     justify-content: center;
    
- 
-
-    @media(min-width:768px){
-        flex-direction: row;
-        margin-top:119px;
-        margin-bottom:81px;
-    
-    
-    }
 
 }
     
@@ -37,57 +30,41 @@
     background-color:$white;
     box-shadow:0px 8px 30px $contactsBoxShadow;
     border-radius:24px;
+    padding:43px 20px;
     
 }
+  
 
-&__content{
-
-    padding:43px 20px;
-    @media(min-width:768px){
-     padding:50px 32px 50px 31px;
-}}
 
 &__title{
 color:$white;
 border-radius:6px;
 font-weight: 500;
 font-size: 12px;
-line-height: 1,83;
+line-height: 1.83;
 letter-spacing: 0.04em;
 text-align: center;
-margin-bottom:25px;
-padding:1px 0;
-@media(min-width:768px){
-font-size: 16px;
-}
+padding:2px 25px;
+
 
     
 }
-&--cafe{
-background-color: $CoffeeBG;
-width:80px;
-@media(min-width:768px){
-    width:73px;
-    padding:5px 0;
+&__title--cafe{
+background-color: $CoffeeBG;;
 }
-}
-&--foodtruck{
+
+&__title--foodtruck{
 background-color: $lime;
-width:130px;
-@media(min-width:768px){
-    width:138px;
-    padding:5px 0;
-}}
+width:130px;}
 
 &__city{
 font-weight: 500;
 font-size: 12px;
 line-height: 1.83;
 letter-spacing: 0.04em;
-margin-bottom:10px;
-@media(min-width:768px){
-    font-size:14px;
-}
+padding:25px 0 10px;
+display:block;
+
 }
 &__description{
 font-weight: 500;
@@ -96,53 +73,82 @@ line-height: 1.5;
 color:$text;
 padding-bottom:25px;
 border-bottom: 1px solid $gray;
-@media(min-width:768px){
-    font-size:14px;
-}}
+}
+
+&__opening-hours{
+padding:25px 0;
+gap:25px;
+display:flex;
+flex-direction: column;
+}
 
 &__weekdays{
 font-weight: 500;
 font-size: 12px;
-line-height:1,83;
-padding-top:25px;
-margin-bottom:5px;
-@media(min-width:768px){
-    font-size:14px;
-}}
+line-height:1.83;
+padding-bottom:5px;
+}
 
 &__hours{
 font-weight: 500;
 font-size: 12px;
-line-height: 1,83;
+line-height: 1.83;
 color:$brand-pink;
-padding-bottom:25px;
-border-bottom: 1px solid $gray;
-margin-bottom:25px;
-@media(min-width:768px){
-    font-size:14px;}
 }
+
+&__details{
+border-top: 1px solid $gray;
+padding-top:25px;
+}
+
+
 &__info{
 font-weight: 500;
 font-size: 12px;
-line-height: 1,5;
+line-height: 1.5;
 color:$text;
-@media(min-width:768px){
-    font-size:14px;}
+
 
 
 }
 &__buttons{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top:54px;
-    padding-bottom:113px;
-    gap:10px;
-    @media(min-width:768px){
-        flex-direction: row;
-    }
+display:flex;
+flex-direction: column;
+justify-content: center;
+padding-top:54px;
+gap:10px;
 
 
 }
 
+
+@media(min-width:768px){
+&__box {
+flex-direction: row;}
+
+&__content{
+padding:50px 32px 50px 31px;}
+
+&__title{
+font-size:16px;}
+
+&--cafe{
+width:73px;
+padding:5px 0;}
+
+&--foodtruck{
+width:138px;
+padding:5px 0;}
+
+&__city, &__weekdays, &__hours, &__info &__description{
+font-size:14px;}
+
+&__buttons{
+flex-direction: row;
 }
+
+
+
+
+
+}}
