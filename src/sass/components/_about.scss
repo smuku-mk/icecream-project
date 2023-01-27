@@ -25,6 +25,7 @@
     // vertical-align: center;
     padding-top: 125px;
     padding-bottom: 15px;
+    color: $brand-pink;
   }
 
   &__img {
@@ -84,6 +85,13 @@
     text-align: left;
     vertical-align: Top;
     color: $text;
+    margin-bottom: 17px;
+    @media (min-width: 768px) {
+      margin-bottom: 62px;
+    }
+    @media (min-width: 1200px) {
+      margin-bottom: 45px;
+    }
   }
 
   &--bgcolor {
