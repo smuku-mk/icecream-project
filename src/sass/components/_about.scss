@@ -22,60 +22,72 @@
   }
 
   &__img {
+    width: 280px;
+    height: 279px;
     padding-bottom: 46px;
+
+    @media (min-width: 768px) {
+      margin-right: 17px;
+      width: 340px;
+      height: 339px;
+    }
+    @media (min-width: 1200px) {
+      margin-right: 74px;
+      width: 516px;
+      height: 516px;
+    }
   }
 
   &__wrapper {
     display: flex;
-
     align-items: center;
     flex-direction: column;
 
     @media (min-width: 768px) {
       flex-direction: row;
     }
-
-    &__text-wrapper {
+    @media (min-width: 1200px) {
+      justify-content: center;
     }
+  }
 
-    &__text {
-      font-family: DM Sans;
-      font-size: 12px;
-      line-height: 19px;
-      text-align: Left;
-      vertical-align: Top;
-      color: $body;
-      padding-bottom: 30px;
-      z-index: 2;
+  &__text-wrapper {
+    @media (min-width: 768px) {
+      max-width: 340px;
     }
+  }
 
-    &__description {
-      font-family: DM Sans;
-      font-style: Medium;
-      font-size: 12px;
-      line-height: 19px;
-      text-align: left;
-      vertical-align: Top;
-      color: $text;
-    }
+  &__text {
+    font-family: DM Sans;
+    font-size: 12px;
+    line-height: 19px;
+    text-align: Left;
+    vertical-align: Top;
+    color: $body;
+    padding-bottom: 30px;
+    z-index: 2;
+  }
 
-    &--bgcolor {
-      background-color: $pageBg;
-    }
+  &__description {
+    font-family: DM Sans;
+    font-style: Medium;
+    font-size: 12px;
+    line-height: 19px;
+    text-align: left;
+    vertical-align: Top;
+    color: $text;
+  }
+
+  &--bgcolor {
+    background-color: $pageBg;
+    // background-color: rgb(31, 6, 134);
   }
 }
 
 .btn__about--margin {
   margin-top: 17px;
   margin-bottom: 39px;
-}
-
-.bg {
-  // background-color: aqua;
-  background-image: url(../images/sectionbg1_2x.png); /* image */
-  background-position: center; /* center the image */
-  background-size: cover;
-
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+  @media (min-width: 768px) {
+    margin-top: 62px;
+  }
 }
