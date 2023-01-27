@@ -7,18 +7,18 @@ display:flex;
 justify-content:center;
 align-items: center;
 border:none;
-padding:13px 0;
+padding:13px 36px;
 
 &--primary{
     color:$white;
     background-color:$ourLocationsBtn;
-    width:161px;
+  
 }
 
 &--secondary{
     color:$brand-red;
     background-color: $white;
-    width:161px;
+    
 }
 
 }
