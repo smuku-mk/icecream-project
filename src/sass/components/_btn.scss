@@ -1,24 +1,57 @@
 .btn{
+@include font-mixin(inherit, 700, 16px, 1.31,unset, unset);
 border-radius:22px;
-font-weight: 700;
-font-size: 16px;
-line-height: 1,31;
 display:flex;
 justify-content:center;
 align-items: center;
 border:none;
 padding:13px 36px;
+cursor: pointer;
+transition-property: transform;
 
 &--primary{
     color:$white;
     background-color:$ourLocationsBtn;
+    transition:1.5s;
   
 }
 
 &--secondary{
     color:$brand-red;
     background-color: $white;
+    transition:1.5s;
     
 }
 
+&--primary:hover{
+transform:scale(1.5);
+box-shadow: inset 104px 0 0 0 $brand-pink;
+
+
+
+}
+&--secondary:hover{
+    transform:scale(1.5);
+    box-shadow: inset 104px 0 0 0 $pageBg;
+    
+
+}
+&--primary:focus, &--secondary:focus{
+transform: scale(1.5);
+outline:none;
+
+}
+}
+
+.smallbtn{
+    border-radius:20px;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    border:none;
+    cursor: pointer;
+    transition-property: transform;
 }

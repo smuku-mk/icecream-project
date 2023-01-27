@@ -37,13 +37,8 @@
 
 
 &__title{
-// @include font-family(inherit, 500, 12px, 0.04em, $white);
-color:$white;
+@include font-mixin(inherit, 500, 12px, 1.86, 0.04em, $white);
 border-radius:6px;
-font-weight: 500;
-font-size: 12px;
-line-height: 1.83;
-letter-spacing: 0.04em;
 text-align: center;
 padding:2px 25px;
 
@@ -55,23 +50,16 @@ background-color: $CoffeeBG;;
 }
 
 &__title--foodtruck{
-background-color: $lime;
-width:130px;}
+background-color: $lime;}
 
 &__city{
-font-weight: 500;
-font-size: 12px;
-line-height: 1.83;
-letter-spacing: 0.04em;
+@include font-mixin(inherit, 500, 12px, 1.86, 0.04em, $body);
 padding:25px 0 10px;
 display:block;
 
 }
 &__description{
-font-weight: 500;
-font-size: 12px;
-line-height: 1.5;
-color:$text;
+@include font-mixin(inherit, 500, 12px, 1.85, unset, $text);
 padding-bottom:25px;
 border-bottom: 1px solid $gray;
 }
@@ -84,17 +72,12 @@ flex-direction: column;
 }
 
 &__weekdays{
-font-weight: 500;
-font-size: 12px;
-line-height:1.83;
+@include font-mixin(inherit, 500, 12px, 1.86, unset, $body);
 padding-bottom:5px;
 }
 
 &__hours{
-font-weight: 500;
-font-size: 12px;
-line-height: 1.83;
-color:$brand-pink;
+@include font-mixin(inherit, 500, 12px, 1.86, unset, $brand-pink);
 }
 
 &__details{
@@ -104,14 +87,9 @@ padding-top:25px;
 
 
 &__info{
-font-weight: 500;
-font-size: 12px;
-line-height: 1.5;
-color:$text;
-
-
-
+@include font-mixin(inherit, 500, 12px, 1.5,unset, $text);
 }
+
 &__buttons{
 display:flex;
 flex-direction: column;
@@ -124,8 +102,13 @@ gap:10px;
 
 
 @media(min-width:768px){
+&__contacts{
+    padding:119px 36px 158px;
+}
 &__box {
-flex-direction: row;}
+flex-direction: row;
+gap:50px;
+max-width: unset;}
 
 &__content{
 padding:50px 32px 50px 31px;}
@@ -133,13 +116,11 @@ padding:50px 32px 50px 31px;}
 &__title{
 font-size:16px;}
 
-&--cafe{
-width:73px;
-padding:5px 0;}
+&__title--cafe{
+padding:5px 25px;}
 
-&--foodtruck{
-width:138px;
-padding:5px 0;}
+&__title--foodtruck{
+padding:5px 25px;}
 
 &__city, &__weekdays, &__hours, &__info &__description{
 font-size:14px;}
