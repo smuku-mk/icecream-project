@@ -8,6 +8,12 @@
   vertical-align: Top;
   color: $brand-red;
   padding-bottom: 26px;
+  @media (min-width: 768px) {
+    font-size: 48px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 58px;
+  }
 
   &__title {
     display: block;
@@ -25,6 +31,7 @@
     width: 280px;
     height: 279px;
     padding-bottom: 46px;
+    object-fit: contain;
 
     @media (min-width: 768px) {
       margin-right: 17px;
@@ -45,6 +52,7 @@
 
     @media (min-width: 768px) {
       flex-direction: row;
+      justify-content: center;
     }
     @media (min-width: 1200px) {
       justify-content: center;
