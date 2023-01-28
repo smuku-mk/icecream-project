@@ -3,21 +3,22 @@
   padding-bottom: 98px;
 }
 
-.products-head {
+.products__head {
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 15px;
-  &__text {
-    text-transform: uppercase;
-  }
-  &__title {
-    margin-bottom: 144px;
-    text-transform: uppercase;
-  }
+  padding-bottom: 144px;
+}
+.products__text {
+  text-transform: uppercase;
 }
 
-.products-grid {
+.products__title {
+  text-transform: uppercase;
+}
+
+.products__grid {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -31,7 +32,6 @@
   flex-wrap: wrap;
   align-items: center;
   border-radius: 24px;
-  margin: 0px;
   padding-top: 161px;
   padding-bottom: 41px;
   position: relative;
@@ -65,12 +65,12 @@
   }
   &__title {
     text-transform: uppercase;
-    margin-bottom: 66px;
+    padding-bottom: 66px;
     position: relative;
   }
   &__text {
     text-align: center;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
   }
 
   &__button {
