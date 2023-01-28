@@ -11,11 +11,11 @@ transition-property: transform;
     margin-left:8px;
     transition-property: transform;
     transition:1.5s;
-    &--primary{
+    &--locations{
         stroke:$white;
     }
 
-    &--secondary{
+    &--franchise{
         stroke:$brand-red;
     }
   
@@ -24,7 +24,7 @@ transition-property: transform;
     
 }
 
-&--primary{
+&--locations{
     color:$white;
     background-color:$ourLocationsBtn;
     transition:1.5s;
@@ -38,7 +38,7 @@ transition-property: transform;
   
 }
 
-&--secondary{
+&--franchise{
     color:$brand-red;
     background-color: $white;
     transition:1.5s;
@@ -57,7 +57,7 @@ transition-property: transform;
     
 
 
-&--primary:focus, &--secondary:focus{
+&--locations:focus, &--franchise:focus{
 transform: scale(1.5);
 outline:none;
 
