@@ -1,9 +1,6 @@
 .btn{
 @include font-mixin(inherit, 700, 16px, 1.31,unset, unset);
 border-radius:22px;
-display:flex;
-justify-content:center;
-align-items: center;
 border:none;
 padding:13px 36px;
 cursor: pointer;
@@ -48,9 +45,6 @@ outline:none;
     font-weight: 400;
     font-size: 8px;
     line-height: 1.25;
-    display:flex;
-    justify-content:center;
-    align-items: center;
     border:none;
     cursor: pointer;
     transition-property: transform;
