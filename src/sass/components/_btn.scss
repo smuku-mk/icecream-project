@@ -5,7 +5,6 @@ border:none;
 padding:13px 36px;
 cursor: pointer;
 transition-property: transform;
-
 &__icon{
     fill:none;
     margin-left:8px;
@@ -14,16 +13,10 @@ transition-property: transform;
     &--locations{
         stroke:$white;
     }
-
     &--franchise{
         stroke:$brand-red;
     }
-  
-    
-
-    
 }
-
 &--locations{
     color:$white;
     background-color:$ourLocationsBtn;
@@ -33,12 +26,10 @@ transition-property: transform;
         box-shadow: inset 104px 0 0 0 $brand-pink;
         .btn__icon{
             transform:rotate(360deg);
-    
-    }}
-  
-}
-
-&--franchise{
+        }
+    }
+  }
+  &--franchise{
     color:$brand-red;
     background-color: $white;
     transition:1.5s;
@@ -47,23 +38,14 @@ transition-property: transform;
         box-shadow: inset 104px 0 0 0 $pageBg;
         .btn__icon{
             transform:rotate(360deg);
-    
-    }}
-    
+        }
+    }
 }
-
-
-
-    
-
-
 &--locations:focus, &--franchise:focus{
 transform: scale(1.5);
 outline:none;
-
 }
 }
-
 .smallbtn{
     border-radius:20px;
     font-weight: 400;
