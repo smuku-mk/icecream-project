@@ -40,7 +40,6 @@
 
 @media screen and (min-width: 768px) {
   .advantages {
-    min-width: 768px;
     flex-direction: row;
     padding: 66px 0 140px 0;
     &__list {
@@ -61,7 +60,6 @@
 
 @media screen and (min-width: 1280px) {
   .advantages {
-    min-width: 1280px;
     padding: 39px 0 140px 0;
     &__list-header {
       font-size: 58px;
