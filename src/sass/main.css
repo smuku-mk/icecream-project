@@ -48,35 +48,30 @@ img {
 
 .footer {
   background-color: #fff5f6;
-  display: block;
-  flex-direction: column;
-  min-width: 320px;
+  padding-top: 40px;
 }
 .footer__header {
-  color: #ffa5ba;
   font-family: "Titan One";
-  font-size: 18px;
   font-weight: 400;
-  display: block;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  color: #ffa5ba;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-start;
-  padding-top: 20px;
-  padding-left: 20px;
   max-width: 80%;
+  margin-bottom: 16px;
 }
-.footer__header--color {
+.footer__color {
   color: #d41443;
   font-size: 34px;
-  margin-top: 16px;
-  display: block;
 }
 .footer__list {
   display: flex;
-  list-style: none;
   align-items: flex-end;
   justify-content: flex-end;
-  padding-right: 20px;
+  margin-top: 43px;
 }
 .footer__circle {
   padding: 3px;
@@ -93,10 +88,9 @@ img {
   justify-content: flex-end;
   align-items: flex-end;
   margin-left: 28px;
-  margin-top: 43px;
 }
 .footer__contacts {
-  margin: 46px 0px 43px 0;
+  margin: 43px 0px 43px 0;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -104,10 +98,10 @@ img {
   color: #000000;
   font-size: 12px;
   font-weight: 700;
-  padding-right: 20px;
 }
-.footer__contacts--color {
+.footer__tel {
   color: #d41443;
+  display: flex;
 }
 .footer__rights {
   display: flex;

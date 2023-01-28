@@ -1,34 +1,26 @@
 .footer {
   background-color: $pageBg;
-  display: block;
-  flex-direction: column;
-  min-width: 320px;
+  padding-top: 40px;
 
   &__header {
-    color: $brand-pink;
-    font-family: 'Titan One';
-    font-size: 18px;
-    font-weight: 400;
-    display: block;
+    @include font-mixin('Titan One', 400, 18px, 30px, 0.04em, $brand-pink);
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
-    padding-top: 20px;
-    padding-left: 20px;
     max-width: 80%;
-    &--color {
-      color: $brand-red;
-      font-size: 34px;
-      margin-top: 16px;
-      display: block;
-    }
+    margin-bottom: 16px;
   }
+
+  &__color {
+    color: $brand-red;
+    font-size: 34px;
+  }
+
   &__list {
     display: flex;
-    list-style: none;
     align-items: flex-end;
     justify-content: flex-end;
-    padding-right: 20px;
+    margin-top: 43px;
   }
   &__circle {
     padding: 3px;
@@ -46,10 +38,10 @@
     justify-content: flex-end;
     align-items: flex-end;
     margin-left: 28px;
-    margin-top: 43px;
   }
+
   &__contacts {
-    margin: 46px 0px 43px 0;
+    margin: 43px 0px 43px 0;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -57,11 +49,12 @@
     color: $body;
     font-size: 12px;
     font-weight: 700;
-    padding-right: 20px;
-    &--color {
-      color: $brand-red;
-    }
   }
+  &__tel {
+    color: $brand-red;
+    display: flex;
+  }
+
   &__rights {
     display: flex;
     flex-wrap: wrap;
