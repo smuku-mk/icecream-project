@@ -6,10 +6,35 @@ padding:13px 36px;
 cursor: pointer;
 transition-property: transform;
 
+&__icon{
+    fill:none;
+    margin-left:8px;
+    transition-property: transform;
+    transition:1.5s;
+    &--primary{
+        stroke:$white;
+    }
+
+    &--secondary{
+        stroke:$brand-red;
+    }
+  
+    
+
+    
+}
+
 &--primary{
     color:$white;
     background-color:$ourLocationsBtn;
     transition:1.5s;
+    &:hover {
+        transform:scale(1.5);
+        box-shadow: inset 104px 0 0 0 $brand-pink;
+        .btn__icon{
+            transform:rotate(360deg);
+    
+    }}
   
 }
 
@@ -17,22 +42,21 @@ transition-property: transform;
     color:$brand-red;
     background-color: $white;
     transition:1.5s;
+    &:hover {
+        transform:scale(1.5);
+        box-shadow: inset 104px 0 0 0 $pageBg;
+        .btn__icon{
+            transform:rotate(360deg);
+    
+    }}
     
 }
 
-&--primary:hover{
-transform:scale(1.5);
-box-shadow: inset 104px 0 0 0 $brand-pink;
 
 
-
-}
-&--secondary:hover{
-    transform:scale(1.5);
-    box-shadow: inset 104px 0 0 0 $pageBg;
     
 
-}
+
 &--primary:focus, &--secondary:focus{
 transform: scale(1.5);
 outline:none;
