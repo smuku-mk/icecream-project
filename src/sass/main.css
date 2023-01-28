@@ -49,6 +49,19 @@ img {
 .footer {
   background-color: #fff5f6;
   padding-top: 40px;
+  padding-bottom: 25px;
+  position: relative;
+}
+.footer ::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(-89px);
+  height: 1px;
+  background-color: #907e82;
 }
 .footer__header {
   font-family: "Titan One";
@@ -62,6 +75,9 @@ img {
   align-items: flex-start;
   max-width: 80%;
   margin-bottom: 16px;
+}
+.footer__homemade {
+  display: block;
 }
 .footer__color {
   color: #d41443;
@@ -90,28 +106,30 @@ img {
   margin-left: 28px;
 }
 .footer__contacts {
-  margin: 43px 0px 43px 0;
+  margin: 43px 0px 65px 0;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  line-height: 22px;
-  color: #000000;
-  font-size: 12px;
+  font-family: "DM Sans";
   font-weight: 700;
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: 0;
+  color: #000000;
 }
 .footer__tel {
   color: #d41443;
   display: flex;
 }
 .footer__rights {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: Center;
   color: #907e82;
   width: 100%;
-  border-top: 1px solid #907e82;
+  max-width: 150px;
   font-family: inherit;
   font-weight: 700;
-  padding: 23px 91px 25px 79px;
+}
+.footer__rights-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 22px;
 }/*# sourceMappingURL=main.css.map */
