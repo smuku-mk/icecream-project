@@ -1,6 +1,7 @@
-// .products {
-//   display: flex;
-// }
+.products {
+  padding-top: 121px;
+  padding-bottom: 98px;
+}
 
 .products-head {
   display: flex;
@@ -8,7 +9,6 @@
   flex-direction: column;
   gap: 15px;
   &__text {
-    margin-top: 121px;
     text-transform: uppercase;
   }
   &__title {
@@ -23,35 +23,70 @@
   flex-direction: column;
   align-items: center;
   gap: 130px;
-  margin-bottom: 98px;
 }
 
-.product-box {
+.product {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   border-radius: 24px;
-  margin: 0px 20px;
+  margin: 0px;
+  padding-top: 161px;
+  padding-bottom: 41px;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -113px;
+    width: 249px;
+    height: 252px;
+    background-size: cover;
+  }
+  &:first-child::before {
+    background-image: url(.././images/product-ice-cream-249.png);
+  }
+  &:nth-child(2)::before {
+    background-image: url(.././images/product-ice-coffee-249.png);
+  }
+  &:last-child::before {
+    background-image: url(.././images/product-milkshake-249.png);
+  }
   &--bg-color:first-child {
-    background-color: #ffb8ca;
+    background-color: $pinkBg;
   }
   &:nth-child(2) {
-    background-color: #f0d1a5;
+    background-color: $CoffeeBG;
   }
   &:last-child {
-    background-color: #c2e297;
+    background-color: $lime;
   }
   &__title {
     text-transform: uppercase;
-    margin-top: 161px;
     margin-bottom: 66px;
+    position: relative;
   }
   &__text {
     text-align: center;
     margin-bottom: 30px;
   }
-  &__link {
-    margin-bottom: 41px;
+
+  &__button {
+    border-radius: 50%;
+    overflow: hidden;
+    border: none;
+  }
+}
+@media (min-resolution: 2dppx) {
+  .product:first-child::before {
+    background-image: url(.././images/product-ice-cream-498.png);
+  }
+  .product:nth-child(2)::before {
+    background-image: url(.././images/product-ice-coffee-498.png);
+  }
+  .product:last-child::before {
+    background-image: url(.././images/product-milkshake-498.png);
   }
 }
