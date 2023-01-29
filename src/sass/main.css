@@ -42,6 +42,77 @@ img {
   border-radius: 22px;
 }
 
+.container--header-bg {
+  background-color: #ffb8ca;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 6px;
+}
+.header__hamburger {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  overflow: clip;
+  position: relative;
+}
+
+.hero {
+  background-color: #ffb8ca;
+  margin-top: -1px;
+  margin-bottom: -1px;
+  overflow: clip;
+}
+.hero__h1-style {
+  padding-top: 137px;
+  text-transform: uppercase;
+  color: #ffffff;
+  position: relative;
+  z-index: 10;
+  /* change with mixin*/
+  font-family: "Titan One";
+  font-weight: 400;
+  line-height: 1.875rem;
+  font-size: 1.625rem;
+  letter-spacing: 0.04em;
+  /* change with mixin*/
+}
+.hero__h1-style--color {
+  color: #d41443;
+  font-size: 3rem;
+  line-height: 2.875rem;
+}
+.hero__anchor-btn {
+  display: flex;
+  padding-top: 19px;
+  padding-bottom: 160px;
+  gap: 8px;
+  position: relative;
+  z-index: 10;
+}
+.hero__ice-cream {
+  position: absolute;
+  top: 36px;
+  left: 117px;
+  z-index: 9;
+}
+.hero__circle {
+  width: 346px;
+  height: 344px;
+  background-color: #ffa5ba;
+  border-radius: 50%;
+  position: absolute;
+  display: block;
+  top: 27px;
+  left: 36px;
+}
+
 .advantages {
   background-color: pink;
 }/*# sourceMappingURL=main.css.map */

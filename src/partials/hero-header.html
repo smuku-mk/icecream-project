@@ -1,47 +1,40 @@
-<header>
-  <nav>
-    <!--Mobile-menu-->
-    <div>
-      <ul>
-        <li>
-          <img src="images/logo-199.png" alt="icecream" />
-        </li>
-        <li>
-          <button>
-            <svg width="20" height="12">
-              <use href="images/icons.svg#icon-hamburger"></use>
-            </svg>
-          </button>
-        </li>
-      </ul>
-      <!--Mobile-menu__modal-->
-      <div>
-        <ul>
-          <button>X</button>
-          <button>
-            Buy now
-            <svg width="20" height="12">
-              <use href="images/icons.svg#icon-btn-buy"></use>
-            </svg>
-          </button>
-          <li><a href="#">Home</a></li>
-          <li><a href="#About-us">About us</a></li>
-          <li><a href="#How-it's-made">How it's made?</a></li>
-          <li><a href="#Our-products">Our products</a></li>
-          <li><a href="#Contact">Contact</a></li>
-        </ul>
-      </div>
-      <!--Mobile-menu__modal-->
-    </div>
-    <!--Mobile-menu-->
-  </nav>
-  <div>
-    <h1>ice cream made with <span>passion</span></h1>
-    <form href="#products">
-      <button type="submit">Products</button>
-    </form>
-    <form href="#How-it's-made?">
-      <button type="submit">How it's made?</button>
-    </form>
+<header id="home">
+  <div class="container container--header-bg">
+    <ul class="header">
+      <li>
+        <img src="images/logo-199.png" alt="icecream" />
+      </li>
+      <li>
+        <button class="header__hamburger">
+          <svg width="20" height="12">
+            <use href="images/icons.svg#icon-Burger"></use>
+          </svg>
+        </button>
+      </li>
+    </ul>
   </div>
 </header>
+<section class="hero container">
+  <h1 class="hero__h1-style">
+    ice cream<br />
+    made with<br /><span class="hero__h1-style--color">passion</span>
+  </h1>
+  <ul class="hero__anchor-btn">
+    <li>
+      <form href="#products">
+        <button type="submit">Products</button>
+      </form>
+    </li>
+    <li>
+      <form href="#About">
+        <button type="submit">How it's made?</button>
+      </form>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <img class="hero__ice-cream" src="images/hero-ice-171.png" alt="ice cream" />
+      <div><span class="hero__circle"></span></div>
+    </li>
+  </ul>
+</section>

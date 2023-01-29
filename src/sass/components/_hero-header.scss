@@ -1,0 +1,67 @@
+.container--header-bg {
+  background-color: $pinkBg;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 6px;
+  &__hamburger {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+}
+.container {
+  overflow: clip;
+  position: relative;
+}
+.hero {
+  background-color: $pinkBg;
+  margin-top: -1px;
+  margin-bottom: -1px;
+  overflow: clip;
+  &__h1-style {
+    padding-top: 137px;
+    text-transform: uppercase;
+    color: $white;
+    position: relative;
+    z-index: 10;
+    /* change with mixin*/
+    font-family: 'Titan One';
+    font-weight: 400;
+    line-height: 1.875rem;
+    font-size: 1.625rem;
+    letter-spacing: 0.04em;
+    /* change with mixin*/
+    &--color {
+      color: $brand-red;
+      font-size: 3rem;
+      line-height: 2.875rem;
+    }
+  }
+  &__anchor-btn {
+    display: flex;
+    padding-top: 19px;
+    padding-bottom: 160px;
+    gap: 8px;
+    position: relative;
+    z-index: 10;
+  }
+  &__ice-cream {
+    position: absolute;
+    top: 36px;
+    left: 117px;
+    z-index: 9;
+  }
+  &__circle {
+    width: 346px;
+    height: 344px;
+    background-color: $brand-pink;
+    border-radius: 50%;
+    position: absolute;
+    display: block;
+    top: 27px;
+    left: 36px;
+  }
+}
