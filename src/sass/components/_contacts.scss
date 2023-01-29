@@ -12,14 +12,17 @@
   &__box {
     display: flex;
     flex-direction: column;
+    padding:0 50px;
     gap: 20px;
-    max-width: 480px;
     width: 100%;
+    max-width:480px;
     justify-content: center;
-    transform:translateY(-19%);
+    align-items: center;
+    transform:translateY(-18%);
   }
   &__container {
     background-color: $white;
+    max-width: 220px;
     box-shadow: 0px 8px 30px $contactsBoxShadow;
     border-radius: 24px;
     padding: 43px 20px;
@@ -43,7 +46,7 @@
     display: block;
   }
   &__description {
-    @include font-mixin('DM Sans', 500, 12px, 1.85, normal, $text);
+    @include font-mixin('DM Sans', 500, 12px, 1.5, normal, $text);
     padding-bottom: 25px;
     border-bottom: 1px solid $gray;
   }
@@ -72,7 +75,7 @@
     flex-direction: column;
     justify-content: center;
     position:absolute;
-    bottom:240px;
+    bottom:280px;
     gap: 10px;
   }
 }
@@ -82,27 +85,37 @@
     transform:translateY(20%);
     &__box {
       flex-direction: row;
-      gap: 30px;
-      max-width: unset;
-      transform:translateY(-55%);
+      padding:0 36px;
+      max-width:768px;
+      gap:20px;
+      transform:translateY(-50%);
     }
-    &__content {
-      padding: 50px 32px 50px 31px;
+    &__container{
+        max-width:220px;
+        padding:50px 20px 50px 20px;;
     }
     &__title {
       font-size: 16px;
       &--cafe {
-        padding: 5px 25px;
+        padding: 5px 8px;
       }
       &--foodtruck {
-        padding: 5px 25px;
+        padding: 5px 8px;
       }
     }
     &__city,
     &__weekdays,
-    &__hours,
-    &__info &__description {
+    &__hours{
+        font-size:14px;
+    }
+    &__description{
+        font-size:14px;
+        line-height:1.66;
+    }
+    
+    &__info {
       font-size: 14px;
+      line-height:1.83;
     }
     &__buttons {
       flex-direction: row;
@@ -114,8 +127,34 @@
     background-image: url(/src/images/sectionbg21.png);
     background-position: top;
     background-repeat: no-repeat;
+    // background-size:cover;
     &__box {
-      gap: 50px;
+      gap:30px;
+      max-width:1200px;
+      padding:0 115px;
+    }
+    &__container{
+        max-width:330px;
+        padding: 51px 44px 62px 43px;
+    }
+    &__city{
+        font-size:16px;
+    }
+    &__decscription{
+        font-size:16px;
+        line-height:1.83;
+        letter-spacing: 0.04em;
+    }
+    &__weekdays{
+        font-size:16px;
+        line-height:1.86;
+        letter-spacing: 0.04em;
+    }
+    &__hours{
+        font-size:16px;
+    }
+    &__info{
+        font-size:16px;
     }
   }
 }
