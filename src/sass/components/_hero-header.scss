@@ -1,28 +1,31 @@
-.container--header-bg {
-  background-color: $pinkBg;
-}
 .header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 6px;
+  background-color: $pinkBg;
+
+  &__bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 6px;
+  }
   &__hamburger {
     background-color: transparent;
     border: none;
     cursor: pointer;
   }
 }
-.container {
-  overflow: clip;
-  position: relative;
-}
+
 .hero {
   background-color: $pinkBg;
-  margin-top: -1px;
-  margin-bottom: -1px;
-  overflow: clip;
-  &__h1-style {
+  &__box {
+    position: relative;
+    background-color: $pinkBg;
+    overflow: hidden;
+    padding-bottom: 160px;
     padding-top: 137px;
+    max-width: 400px;
+    margin: auto;
+  }
+  &__h1-style {
     text-transform: uppercase;
     color: $white;
     position: relative;
@@ -42,8 +45,8 @@
   }
   &__anchor-btn {
     display: flex;
-    padding-top: 19px;
-    padding-bottom: 160px;
+    margin-top: 19px;
+
     gap: 8px;
     position: relative;
     z-index: 10;
