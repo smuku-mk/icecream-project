@@ -1,7 +1,6 @@
 .swiper {
   max-width: 480px;
-  // max-height: 600px;
-  height: 630px;
+  max-height: 540px;
 }
 .customer-review__picture {
   border-radius: 50%;
@@ -14,6 +13,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 30px;
 }
 .customer-review__quote {
   background: $sliderBg;
@@ -26,7 +26,7 @@
   position: relative;
   font-weight: 500;
   font-size: 12px;
-  font-family: 'DM Sans';
+  font-family: inherit;
   line-height: 2.583;
   padding-inline: 11.5px 11.5px;
   text-align: center;
@@ -85,7 +85,6 @@
   }
   .customer-review__quote {
     height: 100%;
-    // width: 100%;
   }
   .customer-review__paragraph::before {
     font-size: 7rem;
@@ -96,11 +95,14 @@
     margin: 16px auto 9px auto;
   }
   .customer-review__name {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.875;
   }
   .customer-review__picture {
     margin-bottom: 21px;
+  }
+  .customer-review__slide {
+    margin-bottom: 35px;
   }
 }
 
@@ -115,7 +117,6 @@
 @media screen and (min-width: 769px) {
   .swiper {
     max-width: 926px;
-    // max-height: 412px;
   }
   .customer-review__paragraph {
     max-width: 822px;
@@ -138,5 +139,8 @@
   .customer-review__name {
     font-size: 20px;
     line-height: 1.85;
+  }
+  .customer-review__slide {
+    margin-bottom: 35px;
   }
 }
