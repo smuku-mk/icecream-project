@@ -1,0 +1,170 @@
+.contacts {
+  background-color: $pageBg;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+  padding-bottom: 113px; //dodane
+  // padding: 180px 50px 167px;
+  // transform:translateY(10%);
+  &__head {
+    display: none;
+  }
+  &__box {
+    display: flex;
+    // flex-wrap: wrap; //dodane
+    flex-direction: column;
+    // padding:0 50px;
+    gap: 20px;
+    // width: 100%;
+    // max-width:480px;
+    // justify-content: center;
+    align-items: center;
+    // transform:translateY(-18%);
+    transform: translateY(-84px); //dodane
+  }
+  &__container {
+    background-color: $white;
+    width: 100%; //dodane
+    max-width: 350px; //zmienione
+    box-shadow: 0px 8px 30px $contactsBoxShadow;
+    border-radius: 24px;
+    padding: 43px 20px;
+  }
+  &__title {
+    @include font-mixin('DM Sans', 500, 12px, 1.86, 0.04em, $white);
+    border-radius: 4px; //zmienione
+    text-align: center;
+    padding: 0px 25px; //zmienione
+
+    &--cafe {
+      background-color: $CoffeeBG;
+    }
+    &--foodtruck {
+      background-color: $lime;
+    }
+  }
+  &__city {
+    @include font-mixin('DM Sans', 500, 12px, 1.86, 0.04em, $body);
+    padding: 25px 0 10px;
+    display: block;
+  }
+  &__description {
+    @include font-mixin('DM Sans', 500, 12px, 1.5, normal, $text);
+    padding-bottom: 25px;
+    border-bottom: 1px solid $gray;
+  }
+  &__opening-hours {
+    padding: 25px 0;
+    gap: 10px; //zmienione
+    display: flex;
+    flex-direction: column;
+  }
+  &__weekdays {
+    @include font-mixin('DM Sans', 500, 12px, 1.86, normal, $body);
+    // padding-bottom: 5px;
+  }
+  &__hours {
+    @include font-mixin('DM Sans', 500, 12px, 1.86, normal, $brand-pink);
+  }
+  &__details {
+    border-top: 1px solid $gray;
+    padding-top: 25px;
+  }
+  &__info {
+    @include font-mixin('DM Sans', 500, 12px, 1.5, normal, $text);
+  }
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center; //dodane
+    transform: translateY(-30px); //dodane
+    // justify-content: center;
+    // position:absolute;
+    // bottom:280px;
+    gap: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .contacts {
+    // padding: 180px 50px 167px;
+    // transform:translateY(20%);
+    &__box {
+      flex-direction: row;
+      // padding: 0 36px;
+      // max-width: 768px;
+      gap: 20px;
+      transform: translateY(-78px); //dodane
+    }
+    &__container {
+      max-width: 350px; //zmienione
+      padding: 50px 31px; //zmienione
+    }
+    &__title {
+      font-size: 16px;
+      border-radius: 6px; //dodane
+      &--cafe {
+        padding: 3px 15px; //zmienione
+      }
+      &--foodtruck {
+        padding: 3px 16px; //zmienione
+      }
+    }
+    &__city,
+    &__weekdays,
+    &__hours {
+      font-size: 14px;
+    }
+    &__description {
+      font-size: 14px;
+      line-height: 1.66;
+    }
+
+    &__info {
+      font-size: 14px;
+      line-height: 1.83;
+    }
+    &__buttons {
+      flex-direction: row;
+      justify-content: center; //dodane
+      gap: 14px; //dodane
+    }
+  }
+}
+@media (min-width: 1280px) {
+  .contacts {
+    background-image: url(/src/images/sectionbg21.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain; //zmienione
+    &__box {
+      gap: 30px;
+      transform: translateY(-102px); //dodane
+      // max-width: 1200px;
+      // padding: 0 115px;
+    }
+    &__container {
+      max-width: 350px;
+      padding: 51px 44px 62px 43px;
+    }
+    &__city {
+      font-size: 16px;
+    }
+    &__decscription {
+      font-size: 16px;
+      line-height: 1.83;
+      letter-spacing: 0.04em;
+    }
+    &__weekdays {
+      font-size: 16px;
+      line-height: 1.86;
+      letter-spacing: 0.04em;
+    }
+    &__hours {
+      font-size: 16px;
+    }
+    &__info {
+      font-size: 16px;
+    }
+  }
+}

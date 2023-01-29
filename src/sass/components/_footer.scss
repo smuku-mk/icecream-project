@@ -1,0 +1,86 @@
+.footer {
+  background-color: $pageBg;
+  padding-top: 40px;
+  padding-bottom: 25px;
+  position: relative;
+
+  ::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(-89px);
+    height: 1px;
+    background-color: $text;
+  }
+
+  &__header {
+    @include font-mixin('Titan One', 400, 18px, 30px, 0.04em, $brand-pink);
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 80%;
+    margin-bottom: 16px;
+  }
+
+  &__homemade {
+    display: block;
+  }
+
+  &__color {
+    color: $brand-red;
+    font-size: 34px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-top: 43px;
+  }
+  &__circle {
+    padding: 3px;
+    background-color: $brand-pink;
+    border-radius: 50%;
+    fill: $white;
+    display: flex;
+    width: 100%;
+
+    &:hover {
+      background-color: $brand-red;
+    }
+  }
+  &__link {
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-left: 28px;
+  }
+
+  &__contacts {
+    margin: 43px 0px 65px 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    @include font-mixin('DM Sans', 700, 12px, 22px, 0, $body);
+  }
+  &__tel {
+    color: $brand-red;
+    display: flex;
+  }
+
+  &__rights {
+    color: $text;
+    width: 100%;
+    max-width: 150px;
+    font-family: inherit;
+    font-weight: 700;
+  }
+
+  &__rights-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 22px;
+  }
+}
