@@ -18,12 +18,12 @@
   background-color: $pinkBg;
   &__box {
     position: relative;
-    background-color: $pinkBg;
+    // background-color: $pinkBg; - to mas już klasa "hero"
     overflow: hidden;
     padding-bottom: 160px;
     padding-top: 137px;
     max-width: 400px;
-    margin: auto;
+    // margin: auto; - to ma już container
   }
   &__h1-style {
     text-transform: uppercase;
