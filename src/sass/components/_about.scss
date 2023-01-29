@@ -1,0 +1,101 @@
+.about {
+  background-color: $pageBg;
+  background: url('../images/sectionbg1_1x.png') no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+  padding-top: 125px;
+
+  @media (min-width: 768px) {
+    background-image: none;
+  }
+  @media (min-width: 1200px) {
+    background-image: url('../images/sectionbg1_3x.png');
+    background-position-y: 140%;
+  }
+
+  &__tittle-2th {
+    @include font-mixin('Titan One', 400, 34px, 1.15, 0.04em, $brand-red);
+    text-align: center;
+    // vertical-align: Top;
+    // padding-bottom: 26px;
+    margin-bottom: 26px; //dodane
+
+    @media (min-width: 768px) {
+      font-size: 48;
+    }
+    @media (min-width: 1200px) {
+      font-size: 58;
+    }
+  }
+
+  &__title {
+    @include font-mixin('Titan One', 400, 18px, 1.17, normal, $brand-pink);
+    display: block;
+    text-align: center;
+    // margin: 0 0 15px 0;
+    margin-bottom: 15px; //dodane
+  }
+
+  &__img {
+    // width: 280px;
+    // height: 279px;
+    // margin: 0 0 46px 0;
+    margin-bottom: 46px; //dodane
+    // object-fit: contain;
+
+    @media (min-width: 768px) {
+      margin-right: 17px;
+      width: 340px;
+      height: 339px;
+    }
+    @media (min-width: 1200px) {
+      margin-right: 74px;
+      width: 516px;
+      height: 516px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+
+  &__text-wrapper {
+    @media (max-width: 768px) {
+      margin: 0 30px;
+    }
+
+    @media (min-width: 768px) {
+      max-width: 340px;
+    }
+  }
+
+  &__text {
+    @include font-mixin('DM Sans', 500, 12px, 1.58, normal, $body); //zmienione
+    // text-align: left;
+    // vertical-align: Top;
+    // padding-bottom: 30px;
+    margin-bottom: 30px; //dodane
+    // z-index: 2;
+  }
+
+  &__description {
+    @include font-mixin('DM Sans', 500, 12px, 1.58, normal, $text); //zmienione
+    // font-style: Medium;
+    // text-align: left;
+    // vertical-align: Top;
+    margin-bottom: 17px;
+    @media (min-width: 768px) {
+      margin-bottom: 62px;
+    }
+    @media (min-width: 1200px) {
+      margin-bottom: 45px;
+    }
+  }
+}
