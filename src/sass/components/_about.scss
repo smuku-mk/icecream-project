@@ -3,6 +3,7 @@
   background: url('../images/sectionbg1_1x.png') no-repeat;
   background-size: contain;
   background-position: center bottom;
+  padding-top: 125px;
 
   @media (min-width: 768px) {
     background-image: none;
@@ -13,7 +14,7 @@
   }
 
   &__tittle-2th {
-    @include font-mixin(Titan One, null, 34, 39px, null, $brand-red);
+    @include font-mixin('Titan One', 400, 34px, 1.15, 0.04em, $brand-red);
     text-align: Center;
     vertical-align: Top;
     padding-bottom: 26px;
@@ -27,17 +28,16 @@
   }
 
   &__title {
-    @include font-mixin(Titan One, null, 18, 21px, null, $brand-pink);
+    @include font-mixin('Titan One', 400, 18px, 1.17, normal, $brand-pink);
     display: block;
     text-align: center;
-    padding-top: 125px;
-    padding-bottom: 15px;
+    margin: 0 0 15px 0;
   }
 
   &__img {
     width: 280px;
     height: 279px;
-    padding-bottom: 46px;
+    margin: 0 0 46px 0;
     object-fit: contain;
 
     @media (min-width: 768px) {
@@ -64,13 +64,17 @@
   }
 
   &__text-wrapper {
+    @media (max-width: 768px) {
+      margin: 0 30px;
+    }
+
     @media (min-width: 768px) {
       max-width: 340px;
     }
   }
 
   &__text {
-    @include font-mixin(DM Sans, null, 12, 19px, null, null);
+    @include font-mixin('DM Sans', 500, 12px, 1.58, normal, null);
     text-align: Left;
     vertical-align: Top;
     padding-bottom: 30px;
@@ -78,7 +82,7 @@
   }
 
   &__description {
-    @include font-mixin(null, null, 12, 19px, null, $text);
+    @include font-mixin(null, 500, 12px, 1.58, normal, $text);
     font-style: Medium;
     text-align: left;
     vertical-align: Top;
