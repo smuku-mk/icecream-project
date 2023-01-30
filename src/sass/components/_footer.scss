@@ -16,7 +16,7 @@
   }
 
   &__header {
-    @include font-mixin('Titan One', 400, 18px, 21px, 0em, $brand-pink);
+    @include font-mixin($titan, 400, 18px, 1.16, 0, $brand-pink);
     max-width: 80%;
   }
 
@@ -26,7 +26,7 @@
   }
 
   &__color {
-    @include font-mixin('Titan One', 400, 34px, 39px, 0.04em, $brand-red);
+    @include font-mixin($titan, 400, 34px, 1.15, 0.04em, $brand-red);
   }
 
   &__list {
@@ -54,16 +54,15 @@
 
   &__contacts {
     margin: 43px 0 65px;
-    display: flex;
-    justify-content: flex-end;
-    @include font-mixin('DM Sans', 700, 12px, 22px, 0, $body);
+
+    @include font-mixin($sans, 700, 12px, 1.83, 0, $black);
   }
   &__tel {
     color: $brand-red;
   }
 
   &__rights {
-    @include font-mixin('DM Sans', 700, 14px, 21px, 0em, $text);
+    @include font-mixin($sans, 700, 14px, 1.5, 0, $text);
     width: 100%;
     max-width: 135px;
   }
@@ -88,13 +87,13 @@
     }
     &__header {
       font-size: 26px;
-      line-height: 30px;
+      line-height: 1.15;
       letter-spacing: 0.04em;
       max-width: 340px;
     }
     &__color {
       font-size: 48px;
-      line-height: 55px;
+      line-height: 1.14;
       letter-spacing: 0.06em;
     }
     &__list {
@@ -106,13 +105,13 @@
     }
     &__contacts {
       font-size: 14px;
-      line-height: 26px;
+      line-height: 1.86;
       margin-top: 46px;
     }
     &__rights {
       max-width: 100%;
       text-align: center;
-      line-height: 26px;
+      line-height: 1.85;
       letter-spacing: 0.02em;
     }
   }
@@ -121,7 +120,7 @@
 @media (min-width: 1280px) {
   .footer {
     ::after {
-      transform: translateY(-60px);
+      transform: translateY(-45px);
     }
     &__style {
       padding-bottom: 33px;
@@ -129,16 +128,19 @@
     &__header {
       max-width: 100%;
       font-size: 30px;
-      line-height: 34px;
+      line-height: 1.13;
     }
     &__color {
       font-size: 58px;
-      line-height: 66px;
+      line-height: 1.13;
     }
     &__contacts {
       font-size: 16px;
-      line-height: 30px;
+      line-height: 2.1;
       margin-top: 50px;
+    }
+    &__rights {
+      text-align: center;
     }
   }
 }
