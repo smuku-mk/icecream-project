@@ -1,0 +1,70 @@
+.header {
+  background-color: $pinkBg;
+
+  &__bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 6px;
+  }
+  &__hamburger {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.hero {
+  background-color: $pinkBg;
+  &__box {
+    position: relative;
+    // background-color: $pinkBg; - to mas już klasa "hero"
+    overflow: hidden;
+    padding-bottom: 160px;
+    padding-top: 137px;
+    max-width: 400px;
+    // margin: auto; - to ma już container
+  }
+  &__h1-style {
+    text-transform: uppercase;
+    color: $white;
+    position: relative;
+    z-index: 10;
+    /* change with mixin*/
+    font-family: 'Titan One';
+    font-weight: 400;
+    line-height: 1.875rem;
+    font-size: 1.625rem;
+    letter-spacing: 0.04em;
+    /* change with mixin*/
+    &--color {
+      color: $brand-red;
+      font-size: 3rem;
+      line-height: 2.875rem;
+    }
+  }
+  &__anchor-btn {
+    display: flex;
+    margin-top: 19px;
+
+    gap: 8px;
+    position: relative;
+    z-index: 10;
+  }
+  &__ice-cream {
+    position: absolute;
+    top: 36px;
+    left: 117px;
+    z-index: 9;
+  }
+  &__circle {
+    width: 346px;
+    height: 344px;
+    background-color: $brand-pink;
+    border-radius: 50%;
+    position: absolute;
+    display: block;
+    top: 27px;
+    left: 36px;
+  }
+}
