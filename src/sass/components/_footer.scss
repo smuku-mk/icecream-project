@@ -31,17 +31,17 @@
 
   &__list {
     display: flex;
-    align-items: flex-end;
+    // align-items: flex-end;
     justify-content: flex-end;
     margin-top: 43px;
   }
   &__circle {
-    padding: 3px;
+    // padding: 3px;
     background-color: $brand-pink;
     border-radius: 50%;
     fill: $white;
     display: flex;
-    width: 100%;
+    // width: 100%;
 
     &:hover {
       background-color: $brand-red;
@@ -56,15 +56,16 @@
   }
 
   &__contacts {
-    margin: 43px 0px 65px 0;
+    // margin: 43px 0px 65px 0;
+    margin: 43px 0 65px; //dodane
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
+    // align-items: flex-end;
     @include font-mixin('DM Sans', 700, 12px, 22px, 0, $body);
   }
   &__tel {
     color: $brand-red;
-    display: flex;
+    // display: flex;
   }
 
   &__rights {
