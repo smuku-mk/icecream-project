@@ -16,9 +16,9 @@
   &__tittle-2th {
     @include font-mixin('Titan One', 400, 34px, 1.15, 0.04em, $brand-red);
     text-align: center;
-    // vertical-align: Top;
-    // padding-bottom: 26px;
-    margin-bottom: 26px; //dodane
+    vertical-align: Top;
+    padding-bottom: 26px;
+    margin-bottom: 26px;
 
     @media (min-width: 768px) {
       font-size: 48;
@@ -32,16 +32,16 @@
     @include font-mixin('Titan One', 400, 18px, 1.17, normal, $brand-pink);
     display: block;
     text-align: center;
-    // margin: 0 0 15px 0;
-    margin-bottom: 15px; //dodane
+    margin: 0 0 15px 0;
+    margin-bottom: 15px;
   }
 
   &__img {
-    // width: 280px;
-    // height: 279px;
-    // margin: 0 0 46px 0;
-    margin-bottom: 46px; //dodane
-    // object-fit: contain;
+    width: 280px;
+    height: 279px;
+    margin: 0 0 46px 0;
+    margin-bottom: 46px;
+    object-fit: contain;
 
     @media (min-width: 768px) {
       margin-right: 17px;
@@ -77,19 +77,19 @@
   }
 
   &__text {
-    @include font-mixin('DM Sans', 500, 12px, 1.58, normal, $black); //zmienione
-    // text-align: left;
-    // vertical-align: Top;
-    // padding-bottom: 30px;
-    margin-bottom: 30px; //dodane
-    // z-index: 2;
+    @include font-mixin('DM Sans', 500, 12px, 1.58, normal, $black);
+    text-align: left;
+    vertical-align: Top;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    z-index: 2;
   }
 
   &__description {
-    @include font-mixin('DM Sans', 500, 12px, 1.58, normal, $text); //zmienione
-    // font-style: Medium;
-    // text-align: left;
-    // vertical-align: Top;
+    @include font-mixin('DM Sans', 500, 12px, 1.58, normal, $text);
+    font-style: Medium;
+    text-align: left;
+    vertical-align: Top;
     margin-bottom: 17px;
     @media (min-width: 768px) {
       margin-bottom: 62px;
