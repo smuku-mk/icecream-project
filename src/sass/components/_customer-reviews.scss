@@ -3,6 +3,7 @@
   max-height: 540px;
 }
 .customer-review {
+  padding-top: 80px;
   padding-bottom: 170px;
   &__picture {
     border-radius: 50%;
@@ -39,7 +40,6 @@
     &::before {
       content: '\275E';
       font-size: 8rem;
-      font-family: inherit;
       color: $gray;
       position: absolute;
       left: 10px;
@@ -49,7 +49,7 @@
   }
 
   &__dots {
-    margin: 14px auto 18px auto;
+    margin: 14px auto 18px;
     &__dot {
       stroke: $sliderAfterDots;
       stroke-width: 1;
@@ -59,7 +59,7 @@
   }
 
   &__name {
-    font-family: inherit;
+    font-family: 'DM Sans';
     font-weight: 500;
     font-size: 14px;
     line-height: 1.86;
@@ -76,6 +76,7 @@
     max-height: 412px;
   }
   .customer-review {
+    padding-top: 123px;
     padding-bottom: 197px;
     &__paragraph {
       max-width: 466px;
@@ -97,7 +98,7 @@
     }
 
     &__dots {
-      margin: 16px auto 9px auto;
+      margin: 16px auto 9px;
     }
     &__name {
       font-size: 16px;
@@ -156,6 +157,7 @@
 }
 @media screen and (min-width: 1280px) {
   .customer-review {
+    padding-top: 123px;
     padding-bottom: 234px;
   }
 }
