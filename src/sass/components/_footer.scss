@@ -63,7 +63,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    @include font-mixin('DM Sans', 700, 12px, 22px, 0, $body);
+    @include font-mixin('DM Sans', 700, 12px, 22px, 0, $black);
   }
   &__tel {
     color: $brand-red;

@@ -77,7 +77,7 @@
   }
 
   &__text {
-    @include font-mixin('DM Sans', 500, 12px, 1.58, normal, $body); //zmienione
+    @include font-mixin('DM Sans', 500, 12px, 1.58, normal, $black); //zmienione
     // text-align: left;
     // vertical-align: Top;
     // padding-bottom: 30px;
