@@ -10,11 +10,11 @@
   }
   &__text {
     text-transform: uppercase;
-    @include font-mixin('Titan One', 400, 18px, 1.1667, normal, $brand-pink);
+    @include font-mixin($titan, 400, 18px, 1.1667, normal, $brand-pink);
   }
   &__title {
     text-transform: uppercase;
-    @include font-mixin('Titan One', 400, 34px, 1.147, 0.04em, $brand-red);
+    @include font-mixin($titan, 400, 34px, 1.147, 0.04em, $brand-red);
   }
   &__grid {
     display: flex;
@@ -63,15 +63,15 @@
   }
   &__item-title {
     text-transform: uppercase;
-    padding-bottom: 66px;
+    margin-bottom: 66px;
     position: relative;
-    @include font-mixin('Titan One', 400, 20px, 1.15, 0.04em, $white);
+    @include font-mixin($titan, 400, 20px, 1.15, 0.04em, $white);
   }
   &__item-text {
     text-align: center;
     padding: 0px 39px 30px 41px;
     position: relative;
-    @include font-mixin('DM Sans', 700, 14px, 1.5, 0.04em, $white);
+    @include font-mixin($sans, 700, 14px, 1.5, 0.04em, $white);
     &::before {
       content: '';
       width: 28px;
@@ -113,10 +113,10 @@
       padding-bottom: 150px;
     }
     &__text {
-      @include font-mixin('Titan One', 400, 26px, 1.154, normal, $brand-pink);
+      @include font-mixin($titan, 400, 26px, 1.154, normal, $brand-pink);
     }
     &__title {
-      @include font-mixin('Titan One', 400, 48px, 1.146, 0.04em, $brand-red);
+      @include font-mixin($titan, 400, 48px, 1.146, 0.04em, $brand-red);
     }
 
     &__grid {
@@ -145,7 +145,7 @@
     }
     &__item-text {
       padding: 0px 11px 40px;
-      @include font-mixin('DM Sans', 700, 14px, 1.785, 0.04em, $white);
+      @include font-mixin($sans, 700, 14px, 1.785, 0.04em, $white);
     }
   }
   @media (min-resolution: 2dppx) {
@@ -169,10 +169,10 @@
       padding-bottom: 259px;
     }
     &__text {
-      @include font-mixin('Titan One', 400, 30px, 1.1333, 0.04em, $brand-pink);
+      @include font-mixin($titan, 400, 30px, 1.1333, 0.04em, $brand-pink);
     }
     &__title {
-      @include font-mixin('Titan One', 400, 58px, 1.138, 0.06em, $brand-red);
+      @include font-mixin($titan, 400, 58px, 1.138, 0.06em, $brand-red);
     }
     &__grid {
       flex-direction: row;
@@ -202,11 +202,12 @@
       }
     }
     &__item-title {
-      @include font-mixin('Titan One', 400, 30px, 1.133, 0.04em, $white);
+      margin-bottom: 70px;
+      @include font-mixin($titan, 400, 30px, 1.133, 0.04em, $white);
     }
     &__item-text {
       padding: 0px 44px 52px;
-      @include font-mixin('DM Sans', 700, 16px, 1.785, 0.04em, $white);
+      @include font-mixin($sans, 700, 16px, 1.785, 0.04em, $white);
       &::before {
         top: -38px;
       }
