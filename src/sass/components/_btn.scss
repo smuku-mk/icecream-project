@@ -1,0 +1,58 @@
+.btn {
+  @include font-mixin(inherit, 700, 16px, 1.31, unset, unset);
+  border-radius: 22px;
+  border: none;
+  padding: 13px 36px;
+  cursor: pointer;
+  transition-property: transform;
+  &__icon {
+    fill: none;
+    margin-left: 8px;
+    transition-property: transform;
+    transition: 1.5s;
+    &--locations {
+      stroke: $white;
+    }
+    &--franchise {
+      stroke: $brand-red;
+    }
+  }
+  &--locations {
+    color: $white;
+    background-color: $ourLocationsBtn;
+    transition: 1.5s;
+    &:hover {
+      transform: scale(1.5);
+      box-shadow: inset 104px 0 0 0 $brand-pink;
+      .btn__icon {
+        transform: rotate(360deg);
+      }
+    }
+  }
+  &--franchise {
+    color: $brand-red;
+    background-color: $white;
+    transition: 1.5s;
+    &:hover {
+      transform: scale(1.5);
+      box-shadow: inset 104px 0 0 0 $pageBg;
+      .btn__icon {
+        transform: rotate(360deg);
+      }
+    }
+  }
+  &--locations:focus,
+  &--franchise:focus {
+    transform: scale(1.5);
+    outline: none;
+  }
+}
+.smallbtn {
+  border-radius: 20px;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+  border: none;
+  cursor: pointer;
+  transition-property: transform;
+}
