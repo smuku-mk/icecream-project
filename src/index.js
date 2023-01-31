@@ -1,7 +1,11 @@
 import './sass/main.scss';
-import Swiper, { Pagination } from 'swiper';
+import Swiper, { Pagination, EffectFlip } from 'swiper';
 const swiper = new Swiper('.mySwiper', {
-  modules: [Pagination],
+  modules: [Pagination, EffectFlip],
+  effect: 'flip',
+  flipEffect: {
+    slideShadows: false,
+  },
   pagination: {
     el: '.swiper-pagination',
   },

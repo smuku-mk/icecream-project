@@ -20,6 +20,7 @@
   transition: 300ms opacity;
   transform: translate3d(0, 0, 0);
   z-index: 10;
+  margin-top: 5px;
   &.swiper-pagination-hidden {
     opacity: 0;
   }
@@ -92,6 +93,7 @@
   // background: var(--swiper-pagination-color, var(--swiper-theme-color));
   background: url('../images/home-1.svg');
   background-size: 15px, cover;
+  background-repeat: no-repeat;
   width: 15px;
   height: 14px;
   border-radius: 0;
