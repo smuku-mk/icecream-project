@@ -105,44 +105,22 @@
     }
   }
   &__milk-description {
-    @include font-mixin($sans, 400, 0.5rem, 0.75rem, 0.04em, $white);
+    @include font-mixin($sans, 400, 0.5rem, 0.75rem, normal, $white);
     max-width: 114px;
   }
   &__counter {
+    text-align: right;
     position: absolute;
     top: 14px;
     right: 44px;
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
   }
   &__numbers {
     @include font-mixin($titan, 400, 1.75rem, 2rem, 0.04em, $brand-red);
   }
   &__places {
-    @include font-mixin($sans, 400, 0.5rem, 0.625rem, 0.04em, $white);
-  }
-}
-.btn--buy-now {
-  @include font-mixin($sans, 700, 1rem, 1.31rem, 0.04em, $brand-red);
-  background-color: $white;
-  padding-right: 53px;
-  z-index: 10;
-  position: relative;
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
-}
-.btn--products {
-  @include font-mixin($sans, 400, 0.5rem, 0.625rem, 0.04em, $white);
-  background-color: $brand-red;
-  padding: 7px 13px;
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
-}
-.btn--about {
-  @include font-mixin($sans, 400, 0.5rem, 0.625rem, 0.04em, $brand-red);
-  background-color: $white;
-  padding: 7px 13px;
-  @media screen and (max-width: 767px) {
-    display: none;
+    @include font-mixin($sans, 400, 0.5rem, 0.625rem, normal, $white);
   }
 }
