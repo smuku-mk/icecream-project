@@ -6,7 +6,7 @@
   padding-top: 80px;
   padding-bottom: 170px;
   &__picture {
-    border-radius: 50%;
+    // border-radius: 50%;
     width: 85px;
     height: 85px;
     margin-bottom: 30px;
@@ -27,7 +27,7 @@
     max-height: 250px;
     max-width: 524px;
     position: relative;
-    @include font-mixin('DM Sans', 500, 12px, 2.583, normal, $body);
+    @include font-mixin($sans, 500, 12px, 2.583, normal, $black);
     padding-inline: 11.5px 11.5px;
     text-align: center;
     background: repeating-linear-gradient($sliderBg, $sliderBg 30px, $gray 30px, $gray 31px);
@@ -55,7 +55,7 @@
   }
 
   &__name {
-    @include font-mixin('DM Sans', 500, 14px, 1.86, normal, $body);
+    @include font-mixin($sans, 500, 14px, 1.86, normal, $black);
     text-align: center;
     margin-bottom: 30px;
   }
