@@ -25,7 +25,7 @@
     }
   }
   &__list-text {
-    @include font-mixin('DM Sans', 700, 12px, 1.67, normal, $body);
+    @include font-mixin('DM Sans', 700, 12px, 1.67, normal, $black);
     text-transform: none;
     max-width: 230px;
   }

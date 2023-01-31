@@ -45,7 +45,7 @@
     }
   }
   &__city {
-    @include font-mixin('DM Sans', 500, 12px, 1.86, 0.04em, $body);
+    @include font-mixin('DM Sans', 500, 12px, 1.86, 0.04em, $black);
     padding: 25px 0 10px;
     display: block;
   }
@@ -61,7 +61,7 @@
     flex-direction: column;
   }
   &__weekdays {
-    @include font-mixin('DM Sans', 500, 12px, 1.86, normal, $body);
+    @include font-mixin('DM Sans', 500, 12px, 1.86, normal, $black);
     // padding-bottom: 5px;
   }
   &__hours {

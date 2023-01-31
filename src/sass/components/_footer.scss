@@ -16,7 +16,7 @@
   }
 
   &__header {
-    @include font-mixin($titan, 400, 18px, 1.16, 0, $brand-pink);
+    @include font-mixin($titan, 400, 18px, 1.16, normal, $brand-pink);
     max-width: 80%;
   }
 
@@ -54,15 +54,16 @@
 
   &__contacts {
     margin: 43px 0 65px;
-
-    @include font-mixin($sans, 700, 12px, 1.83, 0, $black);
+    display: flex; //dodane
+    justify-content: flex-end; //dodane
+    @include font-mixin($sans, 700, 12px, 1.83, normal, $black);
   }
   &__tel {
     color: $brand-red;
   }
 
   &__rights {
-    @include font-mixin($sans, 700, 14px, 1.5, 0, $text);
+    @include font-mixin($sans, 700, 14px, 1.5, normal, $text);
     width: 100%;
     max-width: 135px;
   }
@@ -119,6 +120,7 @@
 
 @media (min-width: 1280px) {
   .footer {
+    padding-bottom: 10px;
     ::after {
       transform: translateY(-45px);
     }
