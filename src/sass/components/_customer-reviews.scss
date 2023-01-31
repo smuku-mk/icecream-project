@@ -27,16 +27,12 @@
     max-height: 250px;
     max-width: 524px;
     position: relative;
-    font-weight: 500;
-    font-size: 12px;
-    font-family: 'DM Sans';
-    line-height: 2.583;
+    @include font-mixin('DM Sans', 500, 12px, 2.583, normal, $body);
     padding-inline: 11.5px 11.5px;
     text-align: center;
     background: repeating-linear-gradient($sliderBg, $sliderBg 30px, $gray 30px, $gray 31px);
     margin: 43px 50px 17px 50px;
     z-index: 0;
-    color: $body;
     &::before {
       content: '\275E';
       font-size: 8rem;
@@ -59,13 +55,9 @@
   }
 
   &__name {
-    font-family: 'DM Sans';
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.86;
+    @include font-mixin('DM Sans', 500, 14px, 1.86, normal, $body);
     text-align: center;
     margin-bottom: 30px;
-    color: $body;
   }
 }
 /* ------------------------- TABLET ------------------------------ */
