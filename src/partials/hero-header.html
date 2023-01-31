@@ -1,5 +1,5 @@
 <header class="header" id="home">
-  <div class="container"> <!-- zapomniałeś usunąć modyfikatora container -->
+  <div class="container">
     <ul class="header__bar">
       <li>
         <img src="images/logo-199.png" alt="icecream" />
@@ -10,6 +10,7 @@
             <use href="images/icons.svg#icon-Burger"></use>
           </svg>
         </button>
+        <button class="btn btn--buy-now">Buy now</button>
       </li>
     </ul>
   </div>
@@ -23,19 +24,95 @@
     <ul class="hero__anchor-btn">
       <li>
         <form href="#products">
-          <button type="submit">Products</button>
+          <button class="btn btn--products" type="submit">Products</button>
         </form>
       </li>
       <li>
-        <form href="#About">
-          <button type="submit">How it's made?</button>
+        <form href="#about">
+          <button class="btn btn--about" type="submit">How it's made?</button>
         </form>
       </li>
     </ul>
-    <ul>
+    <div>
+      <ul>
+        <li>
+          <picture>
+            <!-- for desktop screens  -->
+            <source
+              media="(min-width:1280px)"
+              srcset="images/hero-ice-236.png 1x, images/hero-ice-472.png 2x"
+              type="image/png"
+            />
+            <!-- for tablet screens  -->
+            <source
+              media="(min-width: 768px)"
+              srcset="images/hero-ice-143.png 1x, images/hero-ice-286.png 2x"
+              type="image/png"
+            />
+            <!-- for mobile screens  -->
+            <source
+              media="(max-width:767px)"
+              srcset="images/hero-ice-171.png 1x, images/hero-ice-342.png 2x"
+              type="image/png"
+            />
+            <img class="hero__ice-cream" src="images/hero-ice-171.png" alt="icecream" />
+          </picture>
+          <div><span class="hero__circle"></span></div>
+        </li>
+      </ul>
+    </div>
+    <ul class="hero__milk-info">
       <li>
-        <img class="hero__ice-cream" src="images/hero-ice-171.png" alt="ice cream" />
-        <div><span class="hero__circle"></span></div>
+        <picture>
+          <!-- for desktop screens  -->
+          <source
+            srcset="images/hero-milk-188.png 1x, images/hero-milk-376.png 2x"
+            media="(min-width: 1280px)"
+            type="image/png"
+          />
+          <!-- for tablet screens  -->
+          <source
+            srcset="images/hero-milk-124.png 1x, images/hero-milk-248.png 2x"
+            media="(min-width: 768px)"
+            type="image/png"
+          />
+          <img src="images/hero-milk-124.png" alt="milk" />
+        </picture>
+      </li>
+      <li>
+        <p class="hero__milk-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et
+        </p>
+      </li>
+    </ul>
+    <ul>
+      <li class="hero__counter">
+        <div>
+          <p class="hero__numbers">16</p>
+          <p class="hero__places">cafes</p>
+        </div>
+        <div>
+          <p class="hero__numbers">23</p>
+          <p class="hero__places">food trucks</p>
+        </div>
+      </li>
+      <li>
+        <picture>
+          <!-- for desktop screens  -->
+          <source
+            srcset="images/hero-tasty-293.png 1x, images/hero-tasty-586.png 2x"
+            media="(min-width: 1280px)"
+            type="image/png"
+          />
+          <!-- for tablet screens  -->
+          <source
+            srcset="images/hero-tasty-168.png 1x, images/hero-tasty-336.png 2x"
+            media="(min-width: 768px)"
+            type="image/png"
+          />
+          <img class="hero__girl" src="images/hero-tasty-168.png" alt="girl with icecream" />
+        </picture>
       </li>
     </ul>
   </div>
