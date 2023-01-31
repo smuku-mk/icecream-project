@@ -1,6 +1,5 @@
 .footer {
   background-color: $pageBg;
-  padding-top: 40px;
   padding-bottom: 25px;
   position: relative;
 
@@ -13,74 +12,138 @@
     right: 0;
     transform: translateY(-89px);
     height: 1px;
-    background-color: $text;
+    background-color: $gray;
   }
 
   &__header {
-    @include font-mixin('Titan One', 400, 18px, 30px, 0.04em, $brand-pink);
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
+    @include font-mixin($titan, 400, 18px, 1.16, normal, $brand-pink);
     max-width: 80%;
-    margin-bottom: 16px;
   }
 
   &__homemade {
     display: block;
+    margin-bottom: 16px;
   }
 
   &__color {
-    color: $brand-red;
-    font-size: 34px;
+    @include font-mixin($titan, 400, 34px, 1.15, 0.04em, $brand-red);
   }
 
   &__list {
     display: flex;
-    align-items: flex-end;
     justify-content: flex-end;
     margin-top: 43px;
   }
   &__circle {
-    padding: 3px;
     background-color: $brand-pink;
     border-radius: 50%;
     fill: $white;
     display: flex;
-    width: 100%;
 
     &:hover {
       background-color: $brand-red;
     }
   }
+  &__svg {
+    width: 32px;
+    height: 32px;
+  }
   &__link {
-    justify-content: flex-end;
-    align-items: flex-end;
     margin-left: 28px;
   }
 
   &__contacts {
-    margin: 43px 0px 65px 0;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    @include font-mixin('DM Sans', 700, 12px, 22px, 0, $black);
+    margin: 43px 0 65px;
+    display: flex; //dodane
+    justify-content: flex-end; //dodane
+    @include font-mixin($sans, 700, 12px, 1.83, normal, $black);
   }
   &__tel {
     color: $brand-red;
-    display: flex;
+    margin-left: 5px;
   }
 
   &__rights {
-    color: $text;
+    @include font-mixin($sans, 700, 14px, 1.5, normal, $text);
     width: 100%;
-    max-width: 150px;
-    font-family: inherit;
-    font-weight: 700;
+    max-width: 135px;
   }
 
   &__rights-container {
     display: flex;
     justify-content: center;
     margin-top: 22px;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    ::after {
+      transform: translateY(-73px);
+    }
+    &__style {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-bottom: 73px;
+    }
+    &__header {
+      font-size: 26px;
+      line-height: 1.15;
+      letter-spacing: 0.04em;
+      max-width: 340px;
+    }
+    &__color {
+      font-size: 48px;
+      line-height: 1.14;
+      letter-spacing: 0.06em;
+    }
+    &__list {
+      margin-top: 0;
+    }
+    &__svg {
+      width: 34px;
+      height: 34px;
+    }
+    &__contacts {
+      font-size: 14px;
+      line-height: 1.86;
+      margin-top: 46px;
+    }
+    &__rights {
+      max-width: 100%;
+      text-align: center;
+      line-height: 1.85;
+      letter-spacing: 0.02em;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .footer {
+    padding-bottom: 10px;
+    ::after {
+      transform: translateY(-45px);
+    }
+    &__style {
+      padding-bottom: 33px;
+    }
+    &__header {
+      max-width: 100%;
+      font-size: 30px;
+      line-height: 1.13;
+    }
+    &__color {
+      font-size: 58px;
+      line-height: 1.13;
+    }
+    &__contacts {
+      font-size: 16px;
+      line-height: 2.1;
+      margin-top: 50px;
+    }
+    &__rights {
+      text-align: center;
+    }
   }
 }
