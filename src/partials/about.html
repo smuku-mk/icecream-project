@@ -6,11 +6,16 @@
       <img
         class="about__img"
         srcset="
-          ./images/home-pic4_1x.png 1x,
-          ./images/home-pic4_2x.png 2x,
-          ./images/home-pic4_4x.png 4x
+          ./images/cow-280.png   280w,
+          ./images/cow-340.png   340w,
+          ./images/cow-516.png   516w,
+          ./images/cow-560.png   560w,
+          ./images/cow-720.png   720w,
+          ./images/cow-1032.png 1032w
         "
-        src="./images/home-pic4_1x.png"
+        sizes="(min-width: 1200px) 516px, (min-width: 768px) 340px, (max-width: 340px) 280px, 100vw "
+        width="100%"
+        src="./images/cow-280.png"
         alt="krowa i dzbanek"
       />
       <div class="about__text-wrapper">
@@ -25,7 +30,13 @@
           <br />
           Aliquam erat volutpat. Aenean accumsan.
         </p>
-        <button class="btn" type="button">Read more</button>
+        <button class="btn btn--franchise" type="button">
+          Read more
+
+          <svg width="8" height="10" class="btn__icon btn__icon--franchise">
+            <use href="images/icons.svg#icon-Vector-1"></use>
+          </svg>
+        </button>
       </div>
     </div>
   </div>
