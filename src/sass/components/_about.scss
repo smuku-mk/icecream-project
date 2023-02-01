@@ -1,24 +1,23 @@
 .about {
-  background-color: $pageBg;
-  background-image: url('../images/sectionbg1_1x.png') no-repeat;
+  background-image: url('../images/about-background-320.png');
   background-size: contain;
   background-position: center bottom;
+  background-repeat: no-repeat;
   padding-top: 125px;
+  background-color: $pageBg;
 
   @media (min-width: 768px) {
     background-image: none;
   }
   @media (min-width: 1200px) {
-    background-image: url('../images/sectionbg1_3x.png');
-    background-position-y: 140%;
+    background-image: url('../images/about-background-1280.png');
+    background-position-y: 120%;
   }
 
   &__tittle-2th {
-    @include font-mixin('Titan One', 400, 34px, 1.15, 0.04em, $brand-red);
+    @include font-mixin($titan, 400, 34px, 1.15, 0.04em, $brand-red);
     text-align: center;
-    // vertical-align: Top;
-    // padding-bottom: 26px;
-    margin-bottom: 26px; //dodane
+    margin-bottom: 26px; 
 
     @media (min-width: 768px) {
       font-size: 48;
@@ -29,19 +28,14 @@
   }
 
   &__title {
-    @include font-mixin('Titan One', 400, 18px, 1.17, normal, $brand-pink);
+    @include font-mixin($titan, 400, 18px, 1.17, normal, $brand-pink);
     display: block;
     text-align: center;
-    // margin: 0 0 15px 0;
-    margin-bottom: 15px; //dodane
+    margin-bottom: 15px;
   }
 
   &__img {
-    // width: 280px;
-    // height: 279px;
-    // margin: 0 0 46px 0;
-    margin-bottom: 46px; //dodane
-    // object-fit: contain;
+    margin-bottom: 46px; 
 
     @media (min-width: 768px) {
       margin-right: 17px;
@@ -77,25 +71,19 @@
   }
 
   &__text {
-    @include font-mixin('DM Sans', 500, 12px, 1.58, normal, $black); //zmienione
-    // text-align: left;
-    // vertical-align: Top;
-    // padding-bottom: 30px;
-    margin-bottom: 30px; //dodane
-    // z-index: 2;
+    @include font-mixin($sans, 500, 12px, 1.58, normal, $black); 
+    margin-bottom: 30px;
+
   }
 
   &__description {
-    @include font-mixin('DM Sans', 500, 12px, 1.58, normal, $text); //zmienione
-    // font-style: Medium;
-    // text-align: left;
-    // vertical-align: Top;
+    @include font-mixin($sans, 500, 12px, 1.58, normal, $text); 
     margin-bottom: 17px;
     @media (min-width: 768px) {
-      margin-bottom: 62px;
+      margin-bottom: 62px;ś
     }
     @media (min-width: 1200px) {
       margin-bottom: 45px;
     }
-  }
+  }ś
 }
