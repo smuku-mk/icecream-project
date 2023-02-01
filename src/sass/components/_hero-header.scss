@@ -8,6 +8,11 @@
     @media screen and (min-width: 768px) {
       padding-top: 37px;
     }
+    @media screen and (min-width: 1280px) {
+      padding-top: 50px;
+      padding-bottom: 37px;
+      display: inline-flex;
+    }
   }
   &__hamburger {
     background-color: transparent;
@@ -17,6 +22,23 @@
       margin-right: 30px;
       z-index: 10;
       position: relative;
+    }
+    @media screen and (min-width: 1280px) {
+      display: none;
+    }
+  }
+  &__buttons {
+    display: flex;
+    @media screen and (min-width: 1280px) {
+      padding-left: 110px;
+    }
+  }
+  &__btn-svg {
+    padding-left: 12px;
+  }
+  &__logo {
+    @media screen and (min-width: 1280px) {
+      padding-right: 110px;
     }
   }
 }
@@ -36,6 +58,10 @@
       padding-top: 15px;
       padding-bottom: 28px;
     }
+    @media screen and (min-width: 1280px) {
+      padding-top: 47px;
+      padding-bottom: 45px;
+    }
   }
   &__h1-style {
     text-transform: uppercase;
@@ -46,6 +72,9 @@
       line-height: 1.56rem;
       font-size: 1.375rem;
     }
+    @media screen and (min-width: 1280px) {
+      @include font-mixin($titan, 400, 2.375rem, 2.687rem, 0.04em, $white);
+    }
     &--color {
       color: $brand-red;
       font-size: 3rem;
@@ -53,6 +82,9 @@
       @media screen and (min-width: 768px) {
         line-height: 1.875rem;
         font-size: 2.125rem;
+      }
+      @media screen and (min-width: 1280px) {
+        @include font-mixin($titan, 400, 3.625rem, 3.25rem, 0.04em, $brand-red);
       }
     }
   }
@@ -62,6 +94,10 @@
     gap: 8px;
     position: relative;
     z-index: 10;
+    @media screen and (min-width: 1280px) {
+      margin-top: 25px;
+      gap: 17px;
+    }
   }
   &__ice-cream {
     position: absolute;
@@ -71,6 +107,9 @@
     @media screen and (min-width: 768px) {
       left: 378px;
       top: -24px;
+    }
+    @media screen and (min-width: 1280px) {
+      left: 479px;
     }
   }
   &__circle {
@@ -86,6 +125,12 @@
       left: 307px;
       top: -56px;
     }
+    @media screen and (min-width: 1280px) {
+      width: 538px;
+      height: 538px;
+      left: 360px;
+      top: -85px;
+    }
   }
   &__girl {
     position: absolute;
@@ -95,18 +140,33 @@
     @media screen and (max-width: 767px) {
       display: none;
     }
+    @media screen and (min-width: 1280px) {
+      top: 301px;
+      right: 0px;
+    }
   }
   &__milk-info {
     display: flex;
-    align-items: center;
     margin-top: 17px;
     @media screen and (max-width: 767px) {
       display: none;
     }
+    @media screen and (min-width: 1280px) {
+      margin-top: 51px;
+      gap: 30px;
+    }
   }
   &__milk-description {
+    padding-top: 45px;
+    padding-bottom: 7px;
     @include font-mixin($sans, 400, 0.5rem, 0.75rem, normal, $white);
     max-width: 114px;
+    @media screen and (min-width: 1280px) {
+      @include font-mixin($sans, 400, 0.875rem, 1.18rem, normal, $white);
+      max-width: 200px;
+      padding-top: 56px;
+      padding-bottom: 20px;
+    }
   }
   &__counter {
     text-align: right;
@@ -116,11 +176,59 @@
     @media screen and (max-width: 767px) {
       display: none;
     }
+    @media screen and (min-width: 1280px) {
+      padding-top: 37px;
+      right: 0px;
+    }
   }
   &__numbers {
+    z-index: 10;
+    position: relative;
     @include font-mixin($titan, 400, 1.75rem, 2rem, 0.04em, $brand-red);
+    @media screen and (min-width: 1280px) {
+      @include font-mixin($titan, 400, 2.875rem, 3.25rem, 0.04em, $brand-red);
+    }
+    &::after {
+      z-index: -1;
+      content: '';
+      width: 16px;
+      height: 16px;
+      background-color: $white;
+      border-radius: 50%;
+      position: absolute;
+      top: -2px;
+      right: -10px;
+    }
   }
   &__places {
     @include font-mixin($sans, 400, 0.5rem, 0.625rem, normal, $white);
+    @media screen and (min-width: 1280px) {
+      @include font-mixin($titan, 400, 0.875rem, 1.125rem, 0.04em, $white);
+    }
+  }
+  &__arrow {
+    width: 18;
+    height: 18;
+  }
+}
+.header__nav {
+  z-index: 20;
+  position: relative;
+  @media screen and (max-width: 1279px) {
+    display: none;
+  }
+  &__list {
+    padding-right: 35px;
+    @include font-mixin($sans, 700, 1rem, 1.31rem, normal, $white);
+    &--padding {
+      padding-right: 0px;
+    }
+  }
+}
+.container--header {
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
+    padding-left: 45px;
+    padding-right: 110px;
   }
 }

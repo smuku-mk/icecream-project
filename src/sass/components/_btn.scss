@@ -59,9 +59,10 @@
 .btn--buy-now {
   @include font-mixin($sans, 700, 1rem, 1.31rem, 0.04em, $brand-red);
   background-color: $white;
-  padding-right: 53px;
   z-index: 10;
   position: relative;
+  align-items: center;
+  display: flex;
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -73,12 +74,18 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
+  @media screen and (min-width: 1280px) {
+    @include font-mixin($sans, 400, 0.875rem, 1.125rem, normal, $white);
+  }
 }
 .btn--about {
-  @include font-mixin($sans, 400, 0.5rem, 0.625rem, 0.04em, $brand-red);
+  @include font-mixin($sans, 400, 0.5rem, 0.625rem, normal, $brand-red);
   background-color: $white;
   padding: 7px 13px;
   @media screen and (max-width: 767px) {
     display: none;
+  }
+  @media screen and (min-width: 1280px) {
+    @include font-mixin($sans, 400, 0.875rem, 1.125rem, normal, $brand-red);
   }
 }
