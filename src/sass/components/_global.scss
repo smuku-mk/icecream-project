@@ -34,5 +34,9 @@ img {
 @media screen and (min-width: 1280px) {
   .container {
     padding: 0;
+
+    &--gallery {
+      max-width: 1250px;
+    }
   }
 }
