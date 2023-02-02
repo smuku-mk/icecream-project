@@ -25,8 +25,41 @@
           <br />
           Aliquam erat volutpat. Aenean accumsan.
         </p>
-        <button class="btn" type="button">Read more</button>
+        <button class="btn" type="button" data-modal-about-open>Read more</button>
       </div>
     </div>
   </div>
 </section>
+<div class="backdrop-about is-hidden-about" data-modal-about>
+  <div class="modal-about">
+    <button type="button" class="button-modal-about" data-modal-about-close>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="11"
+        height="11"
+        viewBox="0 0 11 11"
+        fill="none"
+      >
+        <path
+          d="M11 1.10786L9.89214 0L5.5 4.39214L1.10786 0L0 1.10786L4.39214 5.5L0 9.89214L1.10786 11L5.5 6.60786L9.89214 11L11 9.89214L6.60786 5.5L11 1.10786Z"
+          fill="black"
+        />
+      </svg>
+    </button>
+    <div class="modal-about-content">
+      <p class="modal-about-content__text">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem tempore aut dicta dolor
+        cupiditate rerum iste nemo nesciunt? Eveniet, eaque minima rem nam quisquam ducimus officiis
+        beatae doloribus delectus fuga.
+      </p>
+      <iframe
+        width="315"
+        src="https://www.youtube.com/embed/vRXZj0DzXIA"
+        title="BLACKPINK - 'Ice Cream (with Selena Gomez)' M/V"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </div>
+</div>
