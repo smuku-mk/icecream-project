@@ -1,0 +1,39 @@
+.mobile-menu {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  background-color: $mobileMenuBg;
+  z-index: 50;
+  &__close {
+    background-color: $mobileMenuBg;
+    border: none;
+    margin: 23px 0 28px 208px;
+    cursor: pointer;
+  }
+  &__btn-svg {
+    position: absolute;
+    top: 18px;
+    right: 48px;
+  }
+  &__list {
+    @include font-mixin($sans, 700, 1rem, 1.31rem, normal, $white);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 21px;
+    border-top: 1px solid $mobileBorder;
+    border-bottom: 1px solid $mobileBorder;
+    display: grid;
+    &--border {
+      border-top: none;
+    }
+    &--active {
+      color: $brand-red;
+    }
+  }
+}
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+}

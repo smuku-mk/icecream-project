@@ -110,6 +110,7 @@
     }
     @media screen and (min-width: 1280px) {
       left: 479px;
+      top: -16px;
     }
   }
   &__circle {
@@ -141,7 +142,7 @@
       display: none;
     }
     @media screen and (min-width: 1280px) {
-      top: 301px;
+      top: 309px;
       right: 0px;
     }
   }
@@ -198,6 +199,10 @@
       position: absolute;
       top: -2px;
       right: -10px;
+      @media screen and (min-width: 1280px) {
+        width: 30px;
+        height: 30px;
+      }
     }
   }
   &__places {
@@ -218,10 +223,13 @@
     display: none;
   }
   &__list {
-    padding-right: 35px;
+    padding-right: 30px;
     @include font-mixin($sans, 700, 1rem, 1.31rem, normal, $white);
     &--padding {
       padding-right: 0px;
+    }
+    &--active {
+      color: $brand-red;
     }
   }
 }
