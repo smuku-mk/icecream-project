@@ -79,7 +79,7 @@
           <use href="images/icons.svg#icon-Vector-1"></use>
         </svg>
       </button>
-      <button class="btn btn--franchise" button type="button">
+      <button class="btn btn--franchise" button type="button" data-modal-franchise-open>
         Franchise
         <svg width="8" height="10" class="btn__icon btn__icon--franchise">
           <use href="images/icons.svg#icon-Vector-1"></use>
@@ -87,13 +87,175 @@
       </button>
     </div>
   </div>
-<!-- 
+
   <div class="overlay overlay__is-hidden" data-modal>
     <div class="modal">
-    <h1> Hello world</h1>
-    <div style="width: 700px;position: relative;"><iframe width="700" height="440" src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=chicago%2C%20usa+(Cafe%20Chicago)&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><div style="position: absolute;width: 80%;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;"><small style="line-height: 1.8;font-size: 2px;background: #fff;">Powered by <a href="http://www.googlemapsgenerator.com/hi/">googlemapsgenerator.com/hi/</a> & <a href="https://harpangratis.se/">harpan online</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><br />
-    
-    <button type="button" class="close-btn" data-modal-close>X</button>
+      <h3 class="modal__title">Locations</h3>
+      <div class="modal__box">
+        <p class="modal__city">Chicago</p>
+        <a
+          class="modal__address"
+          href="https://www.google.com/maps/place/9233+S+Western+Ave,+Chicago,+IL+60643,+Stany+Zjednoczone/@41.7254691,-87.6819396,17z/data=!4m6!3m5!1s0x880e254371eba5f5:0x7379f6213af22082!8m2!3d41.7254691!4d-87.6819396!16s%2Fg%2F11b8v59vyb"
+          >9233 S Western Ave, Chicago, IL 60643, USA</a
+        >
+        <div class="modal__map" style="width: 400px; position: relative">
+          <iframe
+            width="400"
+            height="200"
+            src="https://maps.google.com/maps?width=500&amp;height=300&amp;hl=en&amp;q=9233%20S%20Western%20Ave%2C%20Chicago%2C%20IL%2060643%2C%20Stany%20Zjednoczone+(Tytu%C5%82)&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+          ></iframe>
+          <div
+            style="
+              position: absolute;
+              width: 80%;
+              bottom: 10px;
+              left: 0;
+              right: 0;
+              margin-left: auto;
+              margin-right: auto;
+              color: #000;
+              text-align: center;
+            "
+          >
+            <small style="line-height: 1.8; font-size: 2px; background: #fff"
+              >Powered by <a href="http://www.googlemapsgenerator.com/tr/">googlemaps gen (tr)</a> &
+              <a href="https://harpangratis.se/kungen/">https://harpangratis.se/kungen/</a></small
+            >
+          </div>
+          <style>
+            #gmap_canvas img {
+              max-width: none !important;
+              background: none !important;
+            }
+          </style>
+        </div>
+        <br />
+      </div>
+      <div class="modal__box">
+        <p class="modal__city">New York</p>
+        <a
+          class="modal__address"
+          href="https://www.google.com/maps/place/184+Malcolm+X+Blvd,+New+York,+NY+10026,+Stany+Zjednoczone/@40.8040452,-73.9478245,17z/data=!4m6!3m5!1s0x89c2f611fd993427:0x4cc6af9d1c308f7e!8m2!3d40.8040452!4d-73.9478245!16s%2Fg%2F11csnh1r5d"
+          >184 Malcolm X Blvd, New York, NY 10026</a
+        >
+        <div class="modal__map" style="width: 400px; position: relative">
+          <iframe
+            width="400"
+            height="200"
+            src="https://maps.google.com/maps?width=500&amp;height=300&amp;hl=en&amp;q=184%20Malcolm%20X%20Blvd%2C%20New%20York%2C%20NY%2010026+(Tytu%C5%82)&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+          ></iframe>
+          <div
+            style="
+              position: absolute;
+              width: 80%;
+              bottom: 10px;
+              left: 0;
+              right: 0;
+              margin-left: auto;
+              margin-right: auto;
+              color: #000;
+              text-align: center;
+            "
+          >
+            <small style="line-height: 1.8; font-size: 2px; background: #fff"
+              >Powered by <a href="http://www.googlemapsgenerator.com/hi/">googlemaps gen (hi)</a> &
+              <a href="https://spindelharpan.nu/">spindelharpan gratis</a></small
+            >
+          </div>
+          <style>
+            #gmap_canvas img {
+              max-width: none !important;
+              background: none !important;
+            }
+          </style>
+        </div>
+        <br />
+      </div>
+      <div class="modal__box">
+        <p class="modal__city">Los Angeles</p>
+        <a
+          class="modal__address"
+          href="https://www.google.com/maps/place/1824+W+Main+St,+Alhambra,+CA+91801,+Stany+Zjednoczone/@34.0913024,-118.1438574,17z/data=!4m6!3m5!1s0x80c2c51da311a733:0xe4ec80e61353d53b!8m2!3d34.0913024!4d-118.1438574!16s%2Fg%2F11b8v4qmd9"
+          >1824 W Main St, Alhambra, CA 91801, USA</a
+        >
+        <div class="modal__map" style="width: 400px; position: relative">
+          <iframe
+            width="400"
+            height="200"
+            src="https://maps.google.com/maps?width=500&amp;height=300&amp;hl=en&amp;q=%201824%20W%20MAIN%20ST%2C%20ALHAMBRA+(Tytu%C5%82)&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+          ></iframe>
+          <div
+            style="
+              position: absolute;
+              width: 80%;
+              bottom: 10px;
+              left: 0;
+              right: 0;
+              margin-left: auto;
+              margin-right: auto;
+              color: #000;
+              text-align: center;
+            "
+          >
+            <small style="line-height: 1.8; font-size: 2px; background: #fff"
+              >Powered by <a href="http://www.googlemapsgenerator.com/da/">googlemaps gen (da)</a> &
+              <a href="https://harpangratis.se/kungen/">harpangratis.se/kungen</a></small
+            >
+          </div>
+          <style>
+            #gmap_canvas img {
+              max-width: none !important;
+              background: none !important;
+            }
+          </style>
+        </div>
+        <br />
+      </div>
+      <button type="button" class="close-btn" data-modal-close>X</button>
+    </div>
   </div>
-</div> -->
+  <div class="overlay-franchise overlay-franchise__is-hidden" data-modal-franchise>
+    <div class="modal-franchise">
+      <p class="modal-franchise__title">Franchise</p>
+      <form>
+        <div class="modal-franchise__field">
+          <label class="modal-franchise__label" for="username"> Name</label>
+          <input class="modal-franchise__input" type="text" name="username" id="username" />
+        </div>
+        <div class="modal-franchise__field">
+          <label class="modal-franchise__label" for="phone"> Phone</label>
+          <input class="modal-franchise__input" type="text" name="phone" id="phone" />
+        </div>
+        <div class="modal-franchise__field">
+          <label class="modal-franchise__label" for="email"> Email</label>
+          <input class="modal-franchise__input" type="text" name="email" id="email" />
+        </div>
+        <div class="modal-franchise__field">
+          <label class="modal-franchise__label" for="comment"> Comment</label>
+          <textarea
+            class="modal-franchise__textarea"
+            name="comment"
+            id="comment"
+            rows="5"
+            placeholder="Comment"
+          ></textarea>
+        </div>
+
+        <button class="modal-franchise__button" type="submit">Send</button>
+      </form>
+      <button type="button" class="close-btn-franchise" data-modal-franchise-close>X</button>
+    </div>
+  </div>
 </section>

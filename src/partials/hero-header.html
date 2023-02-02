@@ -6,7 +6,7 @@
           <img class="header__logo" src="images/logo-199.png" alt="icecream" />
         </li>
         <li class="header__nav">
-          <a class="header__nav__list" href="#home">Home</a>
+          <a class="header__nav__list header__nav__list--active" href="#home">Home</a>
         </li>
         <li class="header__nav">
           <a class="header__nav__list" href="#about">About us</a>
@@ -21,7 +21,7 @@
           <a class="header__nav__list header__nav__list--padding" href="#contacts">Contact</a>
         </li>
         <li class="header__buttons">
-          <button class="header__hamburger">
+          <button data-modal-open class="header__hamburger">
             <svg width="20" height="12">
               <use href="images/icons.svg#icon-Burger"></use>
             </svg>
@@ -45,14 +45,14 @@
     </h1>
     <ul class="hero__anchor-btn">
       <li>
-        <form href="#products">
-          <button class="btn btn--products" type="submit">Products</button>
-        </form>
+        <button class="btn btn--products" onclick="window.location.href='#products';">
+          Products
+        </button>
       </li>
       <li>
-        <form href="#about">
-          <button class="btn btn--about" type="submit">How it's made?</button>
-        </form>
+        <button class="btn btn--about" onclick="window.location.href='#about';">
+          How it's made?
+        </button>
       </li>
     </ul>
     <div>
