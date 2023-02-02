@@ -46,6 +46,50 @@
     transform: scale(1.5);
     outline: none;
   }
+  &--buy-now {
+    @include font-mixin($sans, 700, 1rem, 1.31rem, 0.04em, $brand-red);
+    background-color: $white;
+    z-index: 10;
+    position: relative;
+    align-items: center;
+    display: flex;
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+  &--products {
+    @include font-mixin($sans, 400, 0.5rem, 0.625rem, normal, $white);
+    background-color: $brand-red;
+    padding: 7px 13px;
+    @media screen and (max-width: 767px) {
+    }
+    @media screen and (min-width: 1280px) {
+      @include font-mixin($sans, 400, 0.875rem, 1.125rem, normal, $white);
+      padding: 11px 22px;
+    }
+  }
+  &--mobile-menu {
+    @include font-mixin($sans, 700, 1rem, 1.31rem, 0.04em, $brand-red);
+    background-color: $white;
+    z-index: 10;
+    position: relative;
+    align-items: center;
+    display: flex;
+    padding-left: 48px;
+    padding-right: 90px;
+    margin: 0 20px 19px 21px;
+  }
+  &--about {
+    @include font-mixin($sans, 400, 0.5rem, 0.625rem, normal, $brand-red);
+    background-color: $white;
+    padding: 7px 13px;
+    @media screen and (max-width: 767px) {
+    }
+    @media screen and (min-width: 1280px) {
+      @include font-mixin($sans, 400, 0.875rem, 1.125rem, normal, $brand-red);
+      padding: 11px 22px;
+    }
+  }
 }
 .smallbtn {
   border-radius: 20px;
@@ -55,37 +99,4 @@
   border: none;
   cursor: pointer;
   transition-property: transform;
-}
-.btn--buy-now {
-  @include font-mixin($sans, 700, 1rem, 1.31rem, 0.04em, $brand-red);
-  background-color: $white;
-  z-index: 10;
-  position: relative;
-  align-items: center;
-  display: flex;
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
-}
-.btn--products {
-  @include font-mixin($sans, 400, 0.5rem, 0.625rem, normal, $white);
-  background-color: $brand-red;
-  padding: 7px 13px;
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
-  @media screen and (min-width: 1280px) {
-    @include font-mixin($sans, 400, 0.875rem, 1.125rem, normal, $white);
-  }
-}
-.btn--about {
-  @include font-mixin($sans, 400, 0.5rem, 0.625rem, normal, $brand-red);
-  background-color: $white;
-  padding: 7px 13px;
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
-  @media screen and (min-width: 1280px) {
-    @include font-mixin($sans, 400, 0.875rem, 1.125rem, normal, $brand-red);
-  }
 }
