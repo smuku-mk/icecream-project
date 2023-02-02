@@ -29,7 +29,7 @@
   position: absolute;
   top: 8px;
   right: 8px;
-  background-color: $lime;
+  background-color: $brand-red;
   border-radius: 50%;
   width: 30px;
   height: 30px;
@@ -47,7 +47,7 @@
 .modal-about {
   min-height: 450px;
   max-width: 450px;
-  background-color: $brand-pink;
+  background-color: $footerSocialIcons;
   position: relative;
   visibility: visible;
   overflow: auto;
