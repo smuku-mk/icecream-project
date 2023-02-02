@@ -1,18 +1,40 @@
 <header class="header" id="home">
-  <div class="container">
-    <ul class="header__bar">
-      <li>
-        <img src="images/logo-199.png" alt="icecream" />
-      </li>
-      <li>
-        <button class="header__hamburger">
-          <svg width="20" height="12">
-            <use href="images/icons.svg#icon-Burger"></use>
-          </svg>
-        </button>
-        <button class="btn btn--buy-now">Buy now</button>
-      </li>
-    </ul>
+  <div class="container container--header">
+    <nav>
+      <ul class="header__bar">
+        <li>
+          <img class="header__logo" src="images/logo-199.png" alt="icecream" />
+        </li>
+        <li class="header__nav">
+          <a class="header__nav__list header__nav__list--active" href="#home">Home</a>
+        </li>
+        <li class="header__nav">
+          <a class="header__nav__list" href="#about">About us</a>
+        </li>
+        <li class="header__nav">
+          <a class="header__nav__list" href="#about">How it’s made?</a>
+        </li>
+        <li class="header__nav">
+          <a class="header__nav__list" href="#products">Our products</a>
+        </li>
+        <li class="header__nav">
+          <a class="header__nav__list header__nav__list--padding" href="#contacts">Contact</a>
+        </li>
+        <li class="header__buttons">
+          <button data-modal-open class="header__hamburger">
+            <svg width="20" height="12">
+              <use href="images/icons.svg#icon-Burger"></use>
+            </svg>
+          </button>
+          <button class="btn btn--buy-now">
+            Buy now
+            <svg class="header__btn-svg" width="20" height="12">
+              <use href="images/icons.svg#icon-Vector"></use>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </nav>
   </div>
 </header>
 <section class="hero">
@@ -23,14 +45,14 @@
     </h1>
     <ul class="hero__anchor-btn">
       <li>
-        <form href="#products">
-          <button class="btn btn--products" type="submit">Products</button>
-        </form>
+        <button class="btn btn--products" onclick="window.location.href='#products';">
+          Products
+        </button>
       </li>
       <li>
-        <form href="#about">
-          <button class="btn btn--about" type="submit">How it's made?</button>
-        </form>
+        <button class="btn btn--about" onclick="window.location.href='#about';">
+          How it's made?
+        </button>
       </li>
     </ul>
     <div>
@@ -84,6 +106,14 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et
         </p>
+        <picture>
+          <source
+            srcset="images/arrow-right-40.png 1x, images/arrow-right-80.png 2x"
+            media="(min-width: 768px)"
+            type="image/png"
+          />
+          <img class="hero__arrow" src="images/arrow-right-40.png" alt="arrow right" />
+        </picture>
       </li>
     </ul>
     <ul>
@@ -91,6 +121,7 @@
         <div>
           <p class="hero__numbers">16</p>
           <p class="hero__places">cafes</p>
+          <span class="test1"></span>
         </div>
         <div>
           <p class="hero__numbers">23</p>
