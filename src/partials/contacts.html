@@ -73,32 +73,32 @@
       </li>
     </ul>
     <div class="contacts__buttons">
-      <button class="btn btn--locations" button type="button" data-modal-open>
+      <button class="btn btn--locations" button type="button" data-modal-locations-open>
         Our Locations
-        <svg width="8" height="10" class="btn__icon btn__icon--locations">
+        <svg width="8" height="10" class="contacts__icon contacts__icon--locations">
           <use href="images/icons.svg#icon-Vector-1"></use>
         </svg>
       </button>
       <button class="btn btn--franchise" button type="button" data-modal-franchise-open>
         Franchise
-        <svg width="8" height="10" class="btn__icon btn__icon--franchise">
+        <svg width="8" height="10" class="contacts__icon contacts__icon--franchise">
           <use href="images/icons.svg#icon-Vector-1"></use>
         </svg>
       </button>
     </div>
   </div>
 
-  <div class="overlay overlay__is-hidden" data-modal>
-    <div class="modal">
-      <h3 class="modal__title">Locations</h3>
-      <div class="modal__box">
-        <p class="modal__city">Chicago</p>
+  <div class="overlay-locations overlay-locations__is-hidden" data-modal-locations>
+    <div class="modal-locations">
+      <h3 class="modal-locations__title">Locations</h3>
+      <div class="modal-locations__box">
+        <p class="modal-locations__city">Chicago</p>
         <a
-          class="modal__address"
+          class="modal-locations__address"
           href="https://www.google.com/maps/place/9233+S+Western+Ave,+Chicago,+IL+60643,+Stany+Zjednoczone/@41.7254691,-87.6819396,17z/data=!4m6!3m5!1s0x880e254371eba5f5:0x7379f6213af22082!8m2!3d41.7254691!4d-87.6819396!16s%2Fg%2F11b8v59vyb"
           >9233 S Western Ave, Chicago, IL 60643, USA</a
         >
-        <div class="modal__map" style="width: 400px; position: relative">
+        <div class="modal-locations__map" style="width: 400px; position: relative">
           <iframe
             width="400"
             height="200"
@@ -135,14 +135,14 @@
         </div>
         <br />
       </div>
-      <div class="modal__box">
-        <p class="modal__city">New York</p>
+      <div class="modal-locations__box">
+        <p class="modal-locations__city">New York</p>
         <a
-          class="modal__address"
+          class="modal-locations__address"
           href="https://www.google.com/maps/place/184+Malcolm+X+Blvd,+New+York,+NY+10026,+Stany+Zjednoczone/@40.8040452,-73.9478245,17z/data=!4m6!3m5!1s0x89c2f611fd993427:0x4cc6af9d1c308f7e!8m2!3d40.8040452!4d-73.9478245!16s%2Fg%2F11csnh1r5d"
           >184 Malcolm X Blvd, New York, NY 10026</a
         >
-        <div class="modal__map" style="width: 400px; position: relative">
+        <div class="modal-locations__map" style="width: 400px; position: relative">
           <iframe
             width="400"
             height="200"
@@ -179,14 +179,14 @@
         </div>
         <br />
       </div>
-      <div class="modal__box">
-        <p class="modal__city">Los Angeles</p>
+      <div class="modal-locations__box">
+        <p class="modal-locations__city">Los Angeles</p>
         <a
-          class="modal__address"
+          class="modal-locations__address"
           href="https://www.google.com/maps/place/1824+W+Main+St,+Alhambra,+CA+91801,+Stany+Zjednoczone/@34.0913024,-118.1438574,17z/data=!4m6!3m5!1s0x80c2c51da311a733:0xe4ec80e61353d53b!8m2!3d34.0913024!4d-118.1438574!16s%2Fg%2F11b8v4qmd9"
           >1824 W Main St, Alhambra, CA 91801, USA</a
         >
-        <div class="modal__map" style="width: 400px; position: relative">
+        <div class="modal-locations__map" style="width: 400px; position: relative">
           <iframe
             width="400"
             height="200"
@@ -223,7 +223,7 @@
         </div>
         <br />
       </div>
-      <button type="button" class="close-btn" data-modal-close>X</button>
+      <button type="button" class="close-btn" data-modal-locations-close>X</button>
     </div>
   </div>
   <div class="overlay-franchise overlay-franchise__is-hidden" data-modal-franchise>

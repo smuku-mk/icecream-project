@@ -1,4 +1,4 @@
-.overlay {
+.overlay-locations {
   display: flex;
   position: fixed;
   top: 0;
@@ -17,7 +17,7 @@
     transform: scale(0);
   }
 
-  &__is-hidden .modal {
+  &__is-hidden .modal-locations {
     transform: scale(0);
   }
 }
@@ -34,7 +34,7 @@
   border-radius: 50%;
   cursor: pointer;
 }
-.modal {
+.modal-locations {
   max-width: 480px;
   width: 95%;
   margin: 10px;
@@ -83,8 +83,8 @@
   }
 }
 
-@media (min-width: 1200px) {
-  .modal {
+@media (min-width: 1280px) {
+  .modal-locations {
     max-width: 1050px;
     width: 95%;
     margin: 10px;

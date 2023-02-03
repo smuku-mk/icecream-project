@@ -1,55 +1,70 @@
 .btn {
-  @include font-mixin(inherit, 700, 16px, 1.31, unset, unset);
+  cursor: pointer;
   border-radius: 22px;
   border: none;
-  padding: 13px 36px;
-  cursor: pointer;
-  transition-property: transform;
-  &__icon {
-    fill: none;
-    margin-left: 8px;
-    transition-property: transform;
-    transition: 1.5s;
-    &--locations {
-      stroke: $white;
-    }
-    &--franchise {
-      stroke: $brand-red;
+
+  &--products {
+    @include font-mixin($sans, 400, 0.5rem, 0.625rem, normal, $white);
+    background-color: $brand-red;
+    padding: 7px 13px;
+    @media screen and (min-width: 1280px) {
+      @include font-mixin($sans, 400, 0.875rem, 1.125rem, normal, $white);
+      padding: 11px 22px;
     }
   }
+
+  &--about {
+    @include font-mixin($sans, 400, 0.5rem, 0.625rem, normal, $brand-red);
+    background-color: $white;
+    padding: 7px 13px;
+    @media screen and (min-width: 1280px) {
+      @include font-mixin($sans, 400, 0.875rem, 1.125rem, normal, $brand-red);
+      padding: 11px 22px;
+    }
+  }
+
+  &--product {
+    border-radius: 50%;
+  }
+
+  &--about-page {
+    @include font-mixin($sans, 700, 14px, 1.29, normal, $brand-red);
+    background-color: $white;
+    width: 100%;
+    max-width: 176px;
+    height: 44px;
+    @media screen and (min-width: 768px) {
+      @include font-mixin($sans, 700, 16px, 1.31, normal, $brand-red);
+    }
+  }
+
   &--locations {
+    @include font-mixin($sans, 700, 16px, 1.31, normal, $brand-red);
     color: $white;
     background-color: $ourLocationsBtn;
-    transition: 1.5s;
-    &:hover {
-      transform: scale(1.5);
-      box-shadow: inset 104px 0 0 0 $brand-pink;
-      .btn__icon {
-        transform: rotate(360deg);
-      }
-    }
+    padding: 7px 13px;
+    width: 100%;
+    max-width: 161px;
+    height: 44px;
   }
+
   &--franchise {
+    @include font-mixin($sans, 700, 16px, 1.31, normal, $brand-red);
     color: $brand-red;
     background-color: $white;
-    transition: 1.5s;
-    &:hover {
-      transform: scale(1.5);
-      box-shadow: inset 104px 0 0 0 $pageBg;
-      .btn__icon {
-        transform: rotate(360deg);
-      }
-    }
+    padding: 7px 13px;
+    width: 100%;
+    max-width: 161px;
+    height: 44px;
   }
-  &--locations:focus,
-  &--franchise:focus {
-    transform: scale(1.5);
-    outline: none;
-  }
+
   &--buy-now {
     @include font-mixin($sans, 700, 1rem, 1.31rem, 0.04em, $brand-red);
     background-color: $white;
     z-index: 10;
+    width: 160px;
+    height: 44px;
+    justify-content: center;
     position: relative;
     align-items: center;
     display: flex;
@@ -57,46 +72,17 @@
       display: none;
     }
   }
-  &--products {
-    @include font-mixin($sans, 400, 0.5rem, 0.625rem, normal, $white);
-    background-color: $brand-red;
-    padding: 7px 13px;
-    @media screen and (max-width: 767px) {
-    }
-    @media screen and (min-width: 1280px) {
-      @include font-mixin($sans, 400, 0.875rem, 1.125rem, normal, $white);
-      padding: 11px 22px;
-    }
-  }
+
   &--mobile-menu {
     @include font-mixin($sans, 700, 1rem, 1.31rem, 0.04em, $brand-red);
     background-color: $white;
     z-index: 10;
+    width: 209px;
+    height: 44px;
     position: relative;
     align-items: center;
+    justify-content: center;
     display: flex;
-    padding-left: 48px;
-    padding-right: 90px;
     margin: 0 20px 19px 21px;
   }
-  &--about {
-    @include font-mixin($sans, 400, 0.5rem, 0.625rem, normal, $brand-red);
-    background-color: $white;
-    padding: 7px 13px;
-    @media screen and (max-width: 767px) {
-    }
-    @media screen and (min-width: 1280px) {
-      @include font-mixin($sans, 400, 0.875rem, 1.125rem, normal, $brand-red);
-      padding: 11px 22px;
-    }
-  }
-}
-.smallbtn {
-  border-radius: 20px;
-  font-weight: 400;
-  font-size: 8px;
-  line-height: 1.25;
-  border: none;
-  cursor: pointer;
-  transition-property: transform;
 }

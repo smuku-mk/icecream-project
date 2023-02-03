@@ -84,11 +84,6 @@
       top: -36px;
     }
   }
-  &__item-button {
-    border-radius: 50%;
-    overflow: hidden;
-    border: none;
-  }
 }
 @media (min-resolution: 2dppx) {
   .products__item:first-child::before {
