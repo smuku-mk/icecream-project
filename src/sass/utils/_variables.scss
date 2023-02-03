@@ -6,6 +6,8 @@ $gray: #e1e1e1;
 $lime: #c2e297;
 $black: #000000;
 $text: #907e82;
+$btnWhiteHover: #ecebeb;
+$btnRedHover: #C7133E;
 $mobileMenuBg: #e17992;
 $CoffeeBG: #f0d1a5;
 $pageBg: #fff5f6;
@@ -20,3 +22,6 @@ $mobileBorder: #e18298;
 
 $sans: 'DM Sans', sans-serif;
 $titan: 'Titan One', cursive;
+
+$transitionDurationDefault: 250ms;
+$transitionTimingDefault: cubic-bezier(0.4, 0, 0.2, 1);
